@@ -59,15 +59,27 @@ jobs:
         run: npm run qa:go:test:coverage
 
       - name: Run smoke suite with JSON report
+        env:
+          QA_RUN_API_SMOKE: "false"
+          QA_RUN_API_TESTS: "false"
         run: npm run qa:test:smoke:json
 
       - name: Run critical suite with JSON report
+        env:
+          QA_RUN_API_SMOKE: "false"
+          QA_RUN_API_TESTS: "false"
         run: npm run qa:test:critical:json
 
       - name: Run regression suite with JSON report
+        env:
+          QA_RUN_API_SMOKE: "false"
+          QA_RUN_API_TESTS: "false"
         run: npm run qa:test:regression:json
 
       - name: Run full E2E suite with JSON report
+        env:
+          QA_RUN_API_SMOKE: "false"
+          QA_RUN_API_TESTS: "false"
         run: npm run qa:test:e2e:json
 
       - name: Start backend stack for live API coverage
