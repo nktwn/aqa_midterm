@@ -41,7 +41,15 @@ jobs:
         run: npm run qa:install:browsers
 
       - name: Prepare QA environment
-        run: cp .env.qa.example .env.qa
+        run: |
+          if [ -f .env.qa.example ]; then
+            cp .env.qa.example .env.qa
+          elif [ -f .env.qa ]; then
+            echo "Using tracked .env.qa"
+          else
+            echo "Neither .env.qa.example nor .env.qa exists" >&2
+            exit 1
+          fi
 
       - name: Run frontend lint
         working-directory: frontend
