@@ -40,9 +40,10 @@ test.describe("Orders Midterm", () => {
       await Promise.all([request(), request()]);
     });
 
-    await page.reload();
+    await page.reload({ waitUntil: "networkidle" });
 
-    await expect(page.getByText("Cancelled")).toBeVisible();
     await expect(page.getByText("Заказ #5001")).toBeVisible();
+    await expect(page.getByText(/Отмен(е|ё)н/i)).toBeVisible();
+    await expect(page.getByRole("button", { name: /Отменить заказ/i })).toHaveCount(0);
   });
 });
