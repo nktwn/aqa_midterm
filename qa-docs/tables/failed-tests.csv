@@ -1,5 +1,1 @@
 "test_id","test_name","module","failure_type","frequency_across_runs","runtime_dependent","failure_message"
-"unmapped","api/backend.smoke.spec.ts > backend smoke endpoint responds successfully @smoke","Cross-module","environment-connection-refused","1","true","Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080"
-"unmapped","api/auth/auth.live.spec.ts > Live API authentication > invalid login returns 401 @api @critical @auth","Authentication and authorization","environment-connection-refused","1","true","Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080"
-"unmapped","api/cart/cart.live.spec.ts > Live API cart > unauthorized cart access is rejected @api @critical @cart","Cart management","environment-connection-refused","1","true","Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080"
-"unmapped","api/catalog/catalog.live.spec.ts > Live API catalog > product list endpoint returns catalog payload @api @critical @catalog","Product catalog and listing","environment-connection-refused","1","true","Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080"

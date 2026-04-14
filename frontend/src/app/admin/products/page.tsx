@@ -34,7 +34,7 @@ export default function AdminProductsPage() {
         ]);
 
         if (roleRes.data.role !== 2) {
-            router.replace("/");
+            window.location.href = "/";
             return;
         }
 
@@ -47,7 +47,7 @@ export default function AdminProductsPage() {
                 await loadProducts();
             } catch (e) {
                 if (axios.isAxiosError(e) && e.response?.status === 401) {
-                    router.replace("/login");
+                    window.location.href = "/login";
                     return;
                 }
                 setError("Не удалось загрузить админ-панель.");

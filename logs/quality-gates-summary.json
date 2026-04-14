@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T13:36:58.051Z",
+  "generatedAt": "2026-04-14T14:39:19.318Z",
   "overallPass": true,
   "gates": [
     {
@@ -38,7 +38,7 @@
       "id": "QG-MID-005",
       "criterion": "Non-runtime smoke pass rate",
       "threshold": ">= 85%",
-      "actual": "88.89%",
+      "actual": "100%",
       "passed": true,
       "rationale": "Smoke feedback should remain useful even when optional live services are not enabled."
     }

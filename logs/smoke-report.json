@@ -64,63 +64,53 @@
       "specs": [
         {
           "title": "backend smoke endpoint responds successfully @smoke",
-          "ok": false,
+          "ok": true,
           "tags": [
             "smoke"
           ],
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Set QA_RUN_API_SMOKE=true when the backend stack is running.",
+                  "location": {
+                    "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts",
+                    "line": 4,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 47,
-                  "error": {
-                    "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/metrics\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
-                    "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/metrics\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts:7:34",
-                    "location": {
-                      "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts",
-                      "column": 34,
-                      "line": 7
-                    },
-                    "snippet": "   5 |\n   6 | test(\"backend smoke endpoint responds successfully @smoke\", async ({ request }) => {\n>  7 |   const response = await request.get(`${qaApiHealthUrl}${qaApiHealthPath}`);\n     |                                  ^\n   8 |\n   9 |   expect(response.ok()).toBeTruthy();\n  10 | });"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts",
-                        "column": 34,
-                        "line": 7
-                      },
-                      "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/metrics\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   5 |\n   6 | test(\"backend smoke endpoint responds successfully @smoke\", async ({ request }) => {\n>  7 |   const response = await request.get(`${qaApiHealthUrl}${qaApiHealthPath}`);\n     |                                  ^\n   8 |\n   9 |   expect(response.ok()).toBeTruthy();\n  10 | });\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts:7:34"
-                    }
-                  ],
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-14T12:53:37.357Z",
-                  "annotations": [],
-                  "attachments": [
+                  "startTime": "2026-04-14T14:35:46.267Z",
+                  "annotations": [
                     {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-backend.smoke-backend--ee8a4-responds-successfully-smoke-chromium/error-context.md"
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_SMOKE=true when the backend stack is running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts",
+                        "line": 4,
+                        "column": 6
+                      }
                     }
                   ],
-                  "errorLocation": {
-                    "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/backend.smoke.spec.ts",
-                    "column": 34,
-                    "line": 7
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "skipped"
             }
           ],
           "id": "1a3088289a8bdaaa43a2-bf2225b7b35bbfa29152",
@@ -160,15 +150,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7474,
+                      "duration": 4175,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.344Z",
+                      "startTime": "2026-04-14T14:35:46.895Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -215,15 +205,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 1,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7778,
+                      "duration": 4708,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.305Z",
+                      "startTime": "2026-04-14T14:35:46.907Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -270,15 +260,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 2,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 11044,
+                      "duration": 4908,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.276Z",
+                      "startTime": "2026-04-14T14:35:46.893Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -325,15 +315,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7089,
+                      "duration": 4277,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:38.105Z",
+                      "startTime": "2026-04-14T14:35:46.923Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -380,15 +370,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3716,
+                      "duration": 2812,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:47.143Z",
+                      "startTime": "2026-04-14T14:35:51.668Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -426,15 +416,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3597,
+                  "duration": 2651,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-14T12:53:47.225Z",
+                  "startTime": "2026-04-14T14:35:51.731Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -470,15 +460,15 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 1,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 3180,
+                  "duration": 2240,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-04-14T12:53:47.482Z",
+                  "startTime": "2026-04-14T14:35:52.158Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -523,15 +513,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 2,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1928,
+                      "duration": 2055,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:50.653Z",
+                      "startTime": "2026-04-14T14:35:52.350Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -551,11 +541,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-14T12:53:24.328Z",
-    "duration": 28345.773999999998,
+    "startTime": "2026-04-14T14:35:46.080Z",
+    "duration": 8472.461000000001,
     "expected": 8,
-    "skipped": 0,
-    "unexpected": 1,
+    "skipped": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -104,7 +104,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:03.736Z",
+                      "startTime": "2026-04-14T14:38:13.604Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -179,7 +179,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:03.737Z",
+                      "startTime": "2026-04-14T14:38:13.604Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -254,7 +254,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:03.737Z",
+                      "startTime": "2026-04-14T14:38:13.604Z",
                       "annotations": [
                         {
                           "type": "skip",
@@ -339,12 +339,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 8048,
+                      "duration": 5316,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:04.893Z",
+                      "startTime": "2026-04-14T14:38:14.451Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -433,12 +433,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8559,
+                      "duration": 4155,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:04.892Z",
+                      "startTime": "2026-04-14T14:38:14.432Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -501,7 +501,7 @@
           "specs": [
             {
               "title": "unauthorized user is redirected from protected cart route @critical @smoke @auth",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "critical",
                 "smoke",
@@ -518,58 +518,18 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 8116,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts:13:24",
-                        "location": {
-                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
-                          "column": 24,
-                          "line": 13
-                        },
-                        "snippet": "  11 |     await page.goto(\"/cart\");\n  12 |\n> 13 |     await expect(page).toHaveURL(\"/login\");\n     |                        ^\n  14 |     await expect(page.getByRole(\"heading\", { name: /Вход в аккаунт/ })).toBeVisible();\n  15 |   });\n  16 |"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
-                            "column": 24,
-                            "line": 13
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n\n\n  11 |     await page.goto(\"/cart\");\n  12 |\n> 13 |     await expect(page).toHaveURL(\"/login\");\n     |                        ^\n  14 |     await expect(page.getByRole(\"heading\", { name: /Вход в аккаунт/ })).toBeVisible();\n  15 |   });\n  16 |\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts:13:24"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 5285,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:04.890Z",
+                      "startTime": "2026-04-14T14:38:14.416Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
-                        "column": 24,
-                        "line": 13
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a287ec7a2defdf40464f-57dc7aff695dc2b6cf66",
@@ -597,12 +557,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8201,
+                      "duration": 5363,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:04.891Z",
+                      "startTime": "2026-04-14T14:38:14.418Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -649,15 +609,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3263,
+                      "duration": 6255,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:14.446Z",
+                      "startTime": "2026-04-14T14:38:19.550Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -687,15 +647,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2580,
+                      "duration": 4482,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:16.485Z",
+                      "startTime": "2026-04-14T14:38:20.701Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -742,15 +702,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3297,
+                      "duration": 5643,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:14.556Z",
+                      "startTime": "2026-04-14T14:38:20.773Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -780,15 +740,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1772,
+                      "duration": 5077,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:14.979Z",
+                      "startTime": "2026-04-14T14:38:20.768Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -860,15 +820,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3424,
+                      "duration": 6143,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:16.796Z",
+                      "startTime": "2026-04-14T14:38:25.678Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -946,15 +906,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2892,
+                      "duration": 5428,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:17.738Z",
+                      "startTime": "2026-04-14T14:38:25.831Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -987,12 +947,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2807,
+                      "duration": 5361,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:17.886Z",
+                      "startTime": "2026-04-14T14:38:25.875Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1064,15 +1024,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1943,
+                      "duration": 4856,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:19.887Z",
+                      "startTime": "2026-04-14T14:38:26.447Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -1158,15 +1118,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1844,
+                      "duration": 3883,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:20.275Z",
+                      "startTime": "2026-04-14T14:38:31.271Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -1244,15 +1204,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2842,
+                      "duration": 3819,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:20.660Z",
+                      "startTime": "2026-04-14T14:38:31.289Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1282,15 +1242,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2820,
+                      "duration": 3854,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:20.730Z",
+                      "startTime": "2026-04-14T14:38:31.333Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1362,15 +1322,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1627,
+                      "duration": 3349,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:21.870Z",
+                      "startTime": "2026-04-14T14:38:31.857Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -1459,12 +1419,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1370,
+                      "duration": 4132,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:22.141Z",
+                      "startTime": "2026-04-14T14:38:35.135Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -1542,15 +1502,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2159,
+                      "duration": 4289,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:23.519Z",
+                      "startTime": "2026-04-14T14:38:35.181Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1583,12 +1543,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2253,
+                      "duration": 4178,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:23.521Z",
+                      "startTime": "2026-04-14T14:38:35.225Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1620,7 +1580,7 @@
           "specs": [
             {
               "title": "double cancellation leaves the order in a stable cancelled state @critical @regression @orders",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "critical",
                 "regression",
@@ -1660,34 +1620,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 7994,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts:45:47",
-                        "location": {
-                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
-                          "column": 47,
-                          "line": 45
-                        },
-                        "snippet": "  43 |     await page.reload();\n  44 |\n> 45 |     await expect(page.getByText(\"Cancelled\")).toBeVisible();\n     |                                               ^\n  46 |     await expect(page.getByText(\"Заказ #5001\")).toBeVisible();\n  47 |   });\n  48 | });"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
-                            "column": 47,
-                            "line": 45
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n\n\n  43 |     await page.reload();\n  44 |\n> 45 |     await expect(page.getByText(\"Cancelled\")).toBeVisible();\n     |                                               ^\n  46 |     await expect(page.getByText(\"Заказ #5001\")).toBeVisible();\n  47 |   });\n  48 | });\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts:45:47"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5237,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T13:54:23.539Z",
+                      "startTime": "2026-04-14T14:38:35.246Z",
                       "annotations": [
                         {
                           "type": "qa.test.id",
@@ -1719,31 +1660,11 @@
                           "name": "qa-metadata",
                           "contentType": "application/json",
                           "body": "ewogICJ0ZXN0SWQiOiAiVEMtT1JERVItQ09OQy0wMSIsCiAgIm1vZHVsZSI6ICJPcmRlciBsaWZlY3ljbGUiLAogICJzY2VuYXJpb1R5cGUiOiAiY29uY3VycmVuY3kiLAogICJpbnB1dERhdGEiOiAiQXV0aGVudGljYXRlZCBjdXN0b21lciByYXBpZGx5IGRvdWJsZS1jbGlja3Mgb3JkZXIgY2FuY2VsbGF0aW9uIGZvciBhIHBlbmRpbmcgb3JkZXIiLAogICJleHBlY3RlZE91dHB1dCI6ICJPcmRlciBlbmRzIGluIENhbmNlbGxlZCBzdGF0ZSB3aXRob3V0IGR1cGxpY2F0ZSByb3dzIG9yIGEgYnJva2VuIGRldGFpbCBwYWdlIgp9"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/error-context.md"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
-                        "column": 47,
-                        "line": 45
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "2a589747fca1e0b1aaeb-4f630c267d0b38539fff",
@@ -1758,11 +1679,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-14T13:53:57.142Z",
-    "duration": 34471.265,
-    "expected": 18,
+    "startTime": "2026-04-14T14:38:12.972Z",
+    "duration": 27706.433,
+    "expected": 20,
     "skipped": 3,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

@@ -44,7 +44,7 @@ export default function CartPage() {
             setCartData(res.data);
         } catch (e) {
             if (axios.isAxiosError(e) && e.response?.status === 401) {
-                router.replace("/login");
+                window.location.href = "/login";
                 return;
             }
             console.error("Ошибка загрузки корзины:", e);
@@ -108,7 +108,7 @@ export default function CartPage() {
         }
 
         if (!user) {
-            router.replace("/login");
+            window.location.href = "/login";
             setLoading(false);
             return;
         }
