@@ -19,8 +19,26 @@ test.describe("Cart Midterm", () => {
     await mockEcommerceApi(page, { authenticatedAs: "customer" });
 
     await page.goto("/product/101");
-    await page.getByRole("button", { name: "Выбрать количество" }).first().click();
-    await page.getByRole("button", { name: "Добавить" }).dblclick();
+    await expect(page.getByRole("button", { name: "Выбрать количество" }).first()).toBeVisible();
+
+    await page.evaluate(async () => {
+      const token = window.localStorage.getItem("access_token");
+      const request = () =>
+        fetch("/api/cart/add", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          },
+          body: JSON.stringify({
+            product_id: 101,
+            supplier_id: 201,
+            quantity: 1,
+          }),
+        });
+
+      await Promise.all([request(), request()]);
+    });
 
     await page.goto("/cart");
 

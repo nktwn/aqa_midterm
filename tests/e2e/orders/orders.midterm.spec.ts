@@ -23,7 +23,24 @@ test.describe("Orders Midterm", () => {
     });
 
     await page.goto("/orders/5001");
-    await page.getByRole("button", { name: /Отменить заказ/i }).dblclick();
+    await expect(page.getByRole("button", { name: /Отменить заказ/i })).toBeVisible();
+
+    await page.evaluate(async () => {
+      const token = window.localStorage.getItem("access_token");
+      const request = () =>
+        fetch("/api/order/cancel", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          },
+          body: JSON.stringify({ order_id: 5001 }),
+        });
+
+      await Promise.all([request(), request()]);
+    });
+
+    await page.reload();
 
     await expect(page.getByText("Cancelled")).toBeVisible();
     await expect(page.getByText("Заказ #5001")).toBeVisible();

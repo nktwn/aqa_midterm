@@ -23,6 +23,7 @@ test.describe("Authentication Midterm", () => {
 
     await page.goto("/cart");
 
+    await page.waitForURL(/\/login$/);
     await expect(page).toHaveURL(/\/login$/);
     await expect(page.getByRole("button", { name: "Войти" })).toBeVisible();
   });
@@ -41,8 +42,10 @@ test.describe("Authentication Midterm", () => {
     await mockEcommerceApi(page);
 
     await page.goto("/product/101");
+    await expect(page.getByRole("button", { name: /Добавить в избранное/i })).toBeVisible();
     await page.getByRole("button", { name: /Добавить в избранное/i }).click();
 
+    await page.waitForURL(/\/login$/);
     await expect(page).toHaveURL(/\/login$/);
   });
 });

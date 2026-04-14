@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T13:13:28.555Z",
+  "generatedAt": "2026-04-14T13:36:54.519Z",
   "suiteSummary": [
     {
       "key": "smoke",
@@ -37,47 +37,47 @@
       {
         "package": "diploma",
         "status": "pass",
-        "elapsed": 0.296
+        "elapsed": 0.556
       },
       {
         "package": "diploma/cmd",
         "status": "pass",
-        "elapsed": 0.338
+        "elapsed": 0.674
       },
       {
         "package": "diploma/docs",
         "status": "pass",
-        "elapsed": 0.337
+        "elapsed": 0.656
       },
       {
         "package": "diploma/internal/app",
         "status": "pass",
-        "elapsed": 0.302
+        "elapsed": 0.853
       },
       {
         "package": "diploma/internal/config",
         "status": "pass",
-        "elapsed": 0.371
+        "elapsed": 0.892
       },
       {
         "package": "diploma/internal/testutils",
         "status": "pass",
-        "elapsed": 0.456
+        "elapsed": 0.741
       },
       {
         "package": "diploma/modules/auth",
         "status": "pass",
-        "elapsed": 0.349
+        "elapsed": 0.744
       },
       {
         "package": "diploma/modules/auth/handler",
         "status": "pass",
-        "elapsed": 0.37
+        "elapsed": 0.669
       },
       {
         "package": "diploma/modules/auth/handler/converter",
         "status": "pass",
-        "elapsed": 0.322
+        "elapsed": 0.835
       },
       {
         "package": "diploma/modules/auth/handler/model",
@@ -87,12 +87,12 @@
       {
         "package": "diploma/modules/auth/jwt",
         "status": "pass",
-        "elapsed": 0
+        "elapsed": 0.001
       },
       {
         "package": "diploma/modules/auth/middleware",
         "status": "pass",
-        "elapsed": 0
+        "elapsed": 0.001
       },
       {
         "package": "diploma/modules/auth/model",
@@ -102,12 +102,12 @@
       {
         "package": "diploma/modules/auth/repository/user",
         "status": "pass",
-        "elapsed": 0.407
+        "elapsed": 0.579
       },
       {
         "package": "diploma/modules/auth/repository/user/converter",
         "status": "pass",
-        "elapsed": 0.357
+        "elapsed": 0.538
       },
       {
         "package": "diploma/modules/auth/repository/user/model",
@@ -117,47 +117,47 @@
       {
         "package": "diploma/modules/auth/service/auth",
         "status": "pass",
-        "elapsed": 0
+        "elapsed": 0.001
       },
       {
         "package": "diploma/modules/cart",
         "status": "pass",
-        "elapsed": 0.36
+        "elapsed": 0.644
       },
       {
         "package": "diploma/modules/cart/client/order",
         "status": "pass",
-        "elapsed": 0.392
+        "elapsed": 0.947
       },
       {
         "package": "diploma/modules/cart/client/payment",
         "status": "pass",
-        "elapsed": 0.45
+        "elapsed": 0.967
       },
       {
         "package": "diploma/modules/cart/client/payment/converter",
         "status": "pass",
-        "elapsed": 0.378
+        "elapsed": 0.4
       },
       {
         "package": "diploma/modules/cart/client/payment/model",
         "status": "pass",
-        "elapsed": 0.286
+        "elapsed": 0.768
       },
       {
         "package": "diploma/modules/cart/client/supplier",
         "status": "pass",
-        "elapsed": 0.31
+        "elapsed": 0.824
       },
       {
         "package": "diploma/modules/cart/handler",
         "status": "pass",
-        "elapsed": 0.275
+        "elapsed": 0.663
       },
       {
         "package": "diploma/modules/cart/handler/converter",
         "status": "pass",
-        "elapsed": 0.367
+        "elapsed": 0.642
       },
       {
         "package": "diploma/modules/cart/handler/model",
@@ -172,17 +172,17 @@
       {
         "package": "diploma/modules/cart/redis",
         "status": "pass",
-        "elapsed": 0.572
+        "elapsed": 0.674
       },
       {
         "package": "diploma/modules/cart/repository",
         "status": "pass",
-        "elapsed": 0.314
+        "elapsed": 0.424
       },
       {
         "package": "diploma/modules/cart/repository/converter",
         "status": "pass",
-        "elapsed": 0.311
+        "elapsed": 0.564
       },
       {
         "package": "diploma/modules/cart/repository/model",
@@ -192,22 +192,22 @@
       {
         "package": "diploma/modules/cart/service",
         "status": "pass",
-        "elapsed": 0
+        "elapsed": 0.001
       },
       {
         "package": "diploma/modules/contract",
         "status": "pass",
-        "elapsed": 0.344
+        "elapsed": 0.608
       },
       {
         "package": "diploma/modules/contract/handler",
         "status": "pass",
-        "elapsed": 0.445
+        "elapsed": 0.619
       },
       {
         "package": "diploma/modules/contract/handler/converter",
         "status": "pass",
-        "elapsed": 0.497
+        "elapsed": 0.441
       },
       {
         "package": "diploma/modules/contract/handler/model",
@@ -222,22 +222,22 @@
       {
         "package": "diploma/modules/contract/repo",
         "status": "pass",
-        "elapsed": 0.515
+        "elapsed": 0.812
       },
       {
         "package": "diploma/modules/contract/service",
         "status": "pass",
-        "elapsed": 0.362
+        "elapsed": 0.89
       },
       {
         "package": "diploma/modules/notification",
         "status": "pass",
-        "elapsed": 0.42
+        "elapsed": 0.614
       },
       {
         "package": "diploma/modules/notification/handler",
         "status": "pass",
-        "elapsed": 0.41
+        "elapsed": 0.506
       },
       {
         "package": "diploma/modules/notification/model",
@@ -247,37 +247,37 @@
       {
         "package": "diploma/modules/notification/repository",
         "status": "pass",
-        "elapsed": 0.496
+        "elapsed": 0.824
       },
       {
         "package": "diploma/modules/notification/service",
         "status": "pass",
-        "elapsed": 0.425
+        "elapsed": 0.844
       },
       {
         "package": "diploma/modules/order",
         "status": "pass",
-        "elapsed": 0.433
+        "elapsed": 0.851
       },
       {
         "package": "diploma/modules/order/client/product",
         "status": "pass",
-        "elapsed": 0.289
+        "elapsed": 0.936
       },
       {
         "package": "diploma/modules/order/client/supplier",
         "status": "pass",
-        "elapsed": 0.363
+        "elapsed": 0.831
       },
       {
         "package": "diploma/modules/order/handler",
         "status": "pass",
-        "elapsed": 0.315
+        "elapsed": 0.768
       },
       {
         "package": "diploma/modules/order/handler/converter",
         "status": "pass",
-        "elapsed": 0.409
+        "elapsed": 0.775
       },
       {
         "package": "diploma/modules/order/handler/model",
@@ -292,12 +292,12 @@
       {
         "package": "diploma/modules/order/repo",
         "status": "pass",
-        "elapsed": 0.257
+        "elapsed": 0.915
       },
       {
         "package": "diploma/modules/order/repo/converter",
         "status": "pass",
-        "elapsed": 0.233
+        "elapsed": 0.673
       },
       {
         "package": "diploma/modules/order/repo/model",
@@ -307,42 +307,42 @@
       {
         "package": "diploma/modules/order/service",
         "status": "pass",
-        "elapsed": 0.472
+        "elapsed": 0
       },
       {
         "package": "diploma/modules/product",
         "status": "pass",
-        "elapsed": 0.535
+        "elapsed": 0.655
       },
       {
         "package": "diploma/modules/product/handler",
         "status": "pass",
-        "elapsed": 0.454
+        "elapsed": 0.862
       },
       {
         "package": "diploma/modules/product/handler/converter",
         "status": "pass",
-        "elapsed": 0.36
+        "elapsed": 0.834
       },
       {
         "package": "diploma/modules/product/handler/model",
         "status": "skip",
-        "elapsed": 0.001
+        "elapsed": 0
       },
       {
         "package": "diploma/modules/product/model",
         "status": "skip",
-        "elapsed": 0.001
+        "elapsed": 0.003
       },
       {
         "package": "diploma/modules/product/repository/product",
         "status": "pass",
-        "elapsed": 0.251
+        "elapsed": 0.732
       },
       {
         "package": "diploma/modules/product/repository/product/converter",
         "status": "pass",
-        "elapsed": 0.361
+        "elapsed": 0.969
       },
       {
         "package": "diploma/modules/product/repository/product/model",
@@ -352,7 +352,7 @@
       {
         "package": "diploma/modules/product/service",
         "status": "pass",
-        "elapsed": 0.001
+        "elapsed": 0
       },
       {
         "package": "diploma/modules/supplier",
@@ -362,7 +362,7 @@
       {
         "package": "diploma/modules/supplier/handler",
         "status": "pass",
-        "elapsed": 0.297
+        "elapsed": 0.893
       },
       {
         "package": "diploma/modules/supplier/model",
@@ -372,12 +372,12 @@
       {
         "package": "diploma/modules/supplier/repo",
         "status": "pass",
-        "elapsed": 0.341
+        "elapsed": 0.893
       },
       {
         "package": "diploma/modules/supplier/repo/converter",
         "status": "pass",
-        "elapsed": 0.356
+        "elapsed": 0.842
       },
       {
         "package": "diploma/modules/supplier/repo/model",
@@ -387,22 +387,22 @@
       {
         "package": "diploma/modules/supplier/service",
         "status": "pass",
-        "elapsed": 0.507
+        "elapsed": 0.805
       },
       {
         "package": "diploma/modules/user",
         "status": "pass",
-        "elapsed": 0.501
+        "elapsed": 0.766
       },
       {
         "package": "diploma/modules/user/handler",
         "status": "pass",
-        "elapsed": 0.598
+        "elapsed": 0.745
       },
       {
         "package": "diploma/modules/user/handler/converter",
         "status": "pass",
-        "elapsed": 0.46
+        "elapsed": 0.839
       },
       {
         "package": "diploma/modules/user/handler/model",
@@ -412,17 +412,17 @@
       {
         "package": "diploma/modules/user/model",
         "status": "skip",
-        "elapsed": 0
+        "elapsed": 0.001
       },
       {
         "package": "diploma/modules/user/repository",
         "status": "pass",
-        "elapsed": 0.575
+        "elapsed": 0.809
       },
       {
         "package": "diploma/modules/user/service",
         "status": "pass",
-        "elapsed": 0.411
+        "elapsed": 0.797
       },
       {
         "package": "diploma/pkg/client/db",
@@ -432,22 +432,22 @@
       {
         "package": "diploma/pkg/client/db/pg",
         "status": "pass",
-        "elapsed": 0.388
+        "elapsed": 0.495
       },
       {
         "package": "diploma/pkg/client/db/prettier",
         "status": "pass",
-        "elapsed": 0.496
+        "elapsed": 0.591
       },
       {
         "package": "diploma/pkg/client/db/transaction",
         "status": "pass",
-        "elapsed": 0.477
+        "elapsed": 0.7
       },
       {
         "package": "diploma/pkg/closer",
         "status": "pass",
-        "elapsed": 0.463
+        "elapsed": 0.702
       },
       {
         "package": "diploma/pkg/context-keys",
@@ -457,27 +457,27 @@
       {
         "package": "diploma/pkg/logger",
         "status": "pass",
-        "elapsed": 0.457
+        "elapsed": 0.63
       },
       {
         "package": "diploma/pkg/metrics",
         "status": "pass",
-        "elapsed": 0.471
+        "elapsed": 0.537
       },
       {
         "package": "diploma/pkg/password-util",
         "status": "pass",
-        "elapsed": 0.455
+        "elapsed": 0.443
       },
       {
         "package": "diploma/pkg/service",
         "status": "pass",
-        "elapsed": 0.356
+        "elapsed": 0.424
       },
       {
         "package": "diploma/pkg/validator",
         "status": "pass",
-        "elapsed": 0.345
+        "elapsed": 0.39
       }
     ],
     "tests": [
@@ -668,6 +668,24 @@
         "elapsed": 0
       },
       {
+        "package": "diploma/modules/order/service",
+        "test": "TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder",
+        "status": "pass",
+        "elapsed": 0
+      },
+      {
+        "package": "diploma/modules/order/service",
+        "test": "TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier",
+        "status": "pass",
+        "elapsed": 0
+      },
+      {
+        "package": "diploma/modules/order/service",
+        "test": "TestCancelOrderByCustomer_RejectsNonPendingOrder",
+        "status": "pass",
+        "elapsed": 0
+      },
+      {
         "package": "diploma/modules/product/service",
         "test": "TestProductService",
         "status": "pass",
@@ -702,30 +720,12 @@
         "test": "TestSuggestions_EmptyQueryReturnsEmpty",
         "status": "pass",
         "elapsed": 0
-      },
-      {
-        "package": "diploma/modules/order/service",
-        "test": "TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder",
-        "status": "pass",
-        "elapsed": 0
-      },
-      {
-        "package": "diploma/modules/order/service",
-        "test": "TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier",
-        "status": "pass",
-        "elapsed": 0
-      },
-      {
-        "package": "diploma/modules/order/service",
-        "test": "TestCancelOrderByCustomer_RejectsNonPendingOrder",
-        "status": "pass",
-        "elapsed": 0
       }
     ],
     "packagePassRate": 75.28,
     "testPassRate": 100,
     "failedTests": [],
-    "totalElapsedSeconds": 24.52
+    "totalElapsedSeconds": 43.52
   },
   "highRiskCoverage": [
     {
@@ -795,7 +795,7 @@
   "criticalPassRate": 100,
   "flakyRate": 0,
   "currentExecutionSeconds": 110.18,
-  "previousExecutionSeconds": 37.04,
-  "executionDeltaSeconds": 73.14,
-  "pipelineRuntimeSeconds": 134.7
+  "previousExecutionSeconds": 0,
+  "executionDeltaSeconds": 110.18,
+  "pipelineRuntimeSeconds": 153.7
 }

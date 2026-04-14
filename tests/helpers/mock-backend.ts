@@ -297,6 +297,20 @@ export async function mockEcommerceApi(page: Page, options: MockApiOptions = {})
       return json(route, 200, { role: authUser.role });
     }
 
+    if (path === "/api/user/profile" && method === "GET") {
+      if (!authUser) {
+        return json(route, 401, { error: "unauthorized" });
+      }
+      return json(route, 200, {
+        user: {
+          id: authUser.role + 1,
+          name: authUser.name,
+          phone_number: authUser.phoneNumber,
+          role: authUser.role,
+        },
+      });
+    }
+
     if (path === "/api/cart/" && method === "GET") {
       if (!authUser) {
         return json(route, 401, { error: "unauthorized" });
