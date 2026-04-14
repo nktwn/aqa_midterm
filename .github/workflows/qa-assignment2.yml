@@ -64,11 +64,19 @@ jobs:
           QA_RUN_API_TESTS: "false"
         run: npm run qa:test:smoke:json
 
+      - name: Print smoke suite summary
+        if: always()
+        run: node scripts/print-playwright-failures.mjs logs/smoke-report.json || true
+
       - name: Run critical suite with JSON report
         env:
           QA_RUN_API_SMOKE: "false"
           QA_RUN_API_TESTS: "false"
         run: npm run qa:test:critical:json
+
+      - name: Print critical suite summary
+        if: always()
+        run: node scripts/print-playwright-failures.mjs logs/critical-report.json || true
 
       - name: Run regression suite with JSON report
         env:
@@ -76,11 +84,19 @@ jobs:
           QA_RUN_API_TESTS: "false"
         run: npm run qa:test:regression:json
 
+      - name: Print regression suite summary
+        if: always()
+        run: node scripts/print-playwright-failures.mjs logs/regression-report.json || true
+
       - name: Run full E2E suite with JSON report
         env:
           QA_RUN_API_SMOKE: "false"
           QA_RUN_API_TESTS: "false"
         run: npm run qa:test:e2e:json
+
+      - name: Print E2E suite summary
+        if: always()
+        run: node scripts/print-playwright-failures.mjs logs/e2e-report.json || true
 
       - name: Start backend stack for live API coverage
         working-directory: backend
@@ -103,6 +119,10 @@ jobs:
           QA_RUN_API_SMOKE: "true"
           QA_RUN_API_TESTS: "true"
         run: npm run qa:test:api:json
+
+      - name: Print API suite summary
+        if: always()
+        run: node scripts/print-playwright-failures.mjs logs/api-report.json || true
 
       - name: Generate midterm metrics artifacts
         run: npm run qa:metrics

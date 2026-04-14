@@ -71,7 +71,7 @@
           "specs": [
             {
               "title": "invalid login returns 401 @api @critical @auth",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "api",
                 "critical",
@@ -80,56 +80,46 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
+                        "line": 10,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 48,
-                      "error": {
-                        "message": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n",
-                        "stack": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts:13:36",
-                        "location": {
-                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
-                          "column": 36,
-                          "line": 13
-                        },
-                        "snippet": "  11 |\n  12 |   test(\"invalid login returns 401 @api @critical @auth\", async ({ request }) => {\n> 13 |     const response = await request.post(`${qaApiBaseUrl}/auth/login`, {\n     |                                    ^\n  14 |       data: {\n  15 |         phone_number: \"+70000000000\",\n  16 |         password: \"wrong-password\","
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
-                            "column": 36,
-                            "line": 13
-                          },
-                          "message": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n\n  11 |\n  12 |   test(\"invalid login returns 401 @api @critical @auth\", async ({ request }) => {\n> 13 |     const response = await request.post(`${qaApiBaseUrl}/auth/login`, {\n     |                                    ^\n  14 |       data: {\n  15 |         phone_number: \"+70000000000\",\n  16 |         password: \"wrong-password\",\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts:13:36"
-                        }
-                      ],
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.345Z",
-                      "annotations": [],
-                      "attachments": [
+                      "startTime": "2026-04-14T13:54:03.736Z",
+                      "annotations": [
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-auth-auth.live-Live-AP-2f041-turns-401-api-critical-auth-chromium/error-context.md"
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
+                            "line": 10,
+                            "column": 8
+                          }
                         }
                       ],
-                      "errorLocation": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
-                        "column": 36,
-                        "line": 13
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "skipped"
                 }
               ],
               "id": "f2e19db1574dd82efefb-0acd0e8e58aa0357e9cf",
@@ -156,7 +146,7 @@
           "specs": [
             {
               "title": "unauthorized cart access is rejected @api @critical @cart",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "api",
                 "critical",
@@ -165,56 +155,46 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
+                        "line": 5,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 23,
-                      "error": {
-                        "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
-                        "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts:8:36",
-                        "location": {
-                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
-                          "column": 36,
-                          "line": 8
-                        },
-                        "snippet": "   6 |\n   7 |   test(\"unauthorized cart access is rejected @api @critical @cart\", async ({ request }) => {\n>  8 |     const response = await request.get(`${qaApiBaseUrl}/cart/`);\n     |                                    ^\n   9 |\n  10 |     expect(response.status()).toBe(401);\n  11 |   });"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
-                            "column": 36,
-                            "line": 8
-                          },
-                          "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   6 |\n   7 |   test(\"unauthorized cart access is rejected @api @critical @cart\", async ({ request }) => {\n>  8 |     const response = await request.get(`${qaApiBaseUrl}/cart/`);\n     |                                    ^\n   9 |\n  10 |     expect(response.status()).toBe(401);\n  11 |   });\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts:8:36"
-                        }
-                      ],
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.535Z",
-                      "annotations": [],
-                      "attachments": [
+                      "startTime": "2026-04-14T13:54:03.737Z",
+                      "annotations": [
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-cart-cart.live-Live-AP-08bf2--rejected-api-critical-cart-chromium/error-context.md"
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
+                            "line": 5,
+                            "column": 8
+                          }
                         }
                       ],
-                      "errorLocation": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
-                        "column": 36,
-                        "line": 8
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "skipped"
                 }
               ],
               "id": "b9a4ce32db611ece1278-0ab38388840feebaf260",
@@ -241,7 +221,7 @@
           "specs": [
             {
               "title": "product list endpoint returns catalog payload @api @critical @catalog",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "api",
                 "critical",
@@ -250,61 +230,256 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
+                        "line": 5,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "failed",
-                      "duration": 32,
-                      "error": {
-                        "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
-                        "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts:10:36",
-                        "location": {
-                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
-                          "column": 36,
-                          "line": 10
-                        },
-                        "snippet": "   8 |     request,\n   9 |   }) => {\n> 10 |     const response = await request.get(`${qaApiBaseUrl}/product/list?limit=5&offset=0`);\n     |                                    ^\n  11 |\n  12 |     expect(response.ok()).toBeTruthy();\n  13 |     const body = await response.json();"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
-                            "column": 36,
-                            "line": 10
-                          },
-                          "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   8 |     request,\n   9 |   }) => {\n> 10 |     const response = await request.get(`${qaApiBaseUrl}/product/list?limit=5&offset=0`);\n     |                                    ^\n  11 |\n  12 |     expect(response.ok()).toBeTruthy();\n  13 |     const body = await response.json();\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts:10:36"
-                        }
-                      ],
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.317Z",
-                      "annotations": [],
-                      "attachments": [
+                      "startTime": "2026-04-14T13:54:03.737Z",
+                      "annotations": [
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-catalog-catalog.live-L-7c780-ayload-api-critical-catalog-chromium/error-context.md"
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
+                            "line": 5,
+                            "column": 8
+                          }
                         }
                       ],
-                      "errorLocation": {
-                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
-                        "column": 36,
-                        "line": 10
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "skipped"
                 }
               ],
               "id": "a554a5a849ab16a884c5-162a8173a99fc949a51e",
               "file": "api/catalog/catalog.live.spec.ts",
               "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/auth/auth.midterm.spec.ts",
+      "file": "e2e/auth/auth.midterm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication Midterm",
+          "file": "e2e/auth/auth.midterm.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "expired token is cleared and protected cart route redirects to login @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-AUTH-INVALID-01"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Authentication and authorization"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "invalid-user-behavior"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Expired access token and refresh token stored in localStorage before visiting /cart"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Client clears expired credentials and redirects the user to /login"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8048,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:04.893Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-AUTH-INVALID-01"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Authentication and authorization"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "invalid-user-behavior"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Expired access token and refresh token stored in localStorage before visiting /cart"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Client clears expired credentials and redirects the user to /login"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQVVUSC1JTlZBTElELTAxIiwKICAibW9kdWxlIjogIkF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3JpemF0aW9uIiwKICAic2NlbmFyaW9UeXBlIjogImludmFsaWQtdXNlci1iZWhhdmlvciIsCiAgImlucHV0RGF0YSI6ICJFeHBpcmVkIGFjY2VzcyB0b2tlbiBhbmQgcmVmcmVzaCB0b2tlbiBzdG9yZWQgaW4gbG9jYWxTdG9yYWdlIGJlZm9yZSB2aXNpdGluZyAvY2FydCIsCiAgImV4cGVjdGVkT3V0cHV0IjogIkNsaWVudCBjbGVhcnMgZXhwaXJlZCBjcmVkZW50aWFscyBhbmQgcmVkaXJlY3RzIHRoZSB1c2VyIHRvIC9sb2dpbiIKfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed8ccd194d8ecdb73a82-5bad68836604f5e31582",
+              "file": "e2e/auth/auth.midterm.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "guest user attempting to favorite a product is redirected to login @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-AUTH-FAIL-02"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Authentication and authorization"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "failure"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Anonymous user opens product details and clicks the favorite button"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Unauthorized favorite action is blocked and the user is redirected to /login"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8559,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:04.892Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-AUTH-FAIL-02"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Authentication and authorization"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "failure"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Anonymous user opens product details and clicks the favorite button"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Unauthorized favorite action is blocked and the user is redirected to /login"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQVVUSC1GQUlMLTAyIiwKICAibW9kdWxlIjogIkF1dGhlbnRpY2F0aW9uIGFuZCBhdXRob3JpemF0aW9uIiwKICAic2NlbmFyaW9UeXBlIjogImZhaWx1cmUiLAogICJpbnB1dERhdGEiOiAiQW5vbnltb3VzIHVzZXIgb3BlbnMgcHJvZHVjdCBkZXRhaWxzIGFuZCBjbGlja3MgdGhlIGZhdm9yaXRlIGJ1dHRvbiIsCiAgImV4cGVjdGVkT3V0cHV0IjogIlVuYXV0aG9yaXplZCBmYXZvcml0ZSBhY3Rpb24gaXMgYmxvY2tlZCBhbmQgdGhlIHVzZXIgaXMgcmVkaXJlY3RlZCB0byAvbG9naW4iCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed8ccd194d8ecdb73a82-9b1bd484dc4333a8f750",
+              "file": "e2e/auth/auth.midterm.spec.ts",
+              "line": 31,
               "column": 7
             }
           ]
@@ -326,7 +501,7 @@
           "specs": [
             {
               "title": "unauthorized user is redirected from protected cart route @critical @smoke @auth",
-              "ok": true,
+              "ok": false,
               "tags": [
                 "critical",
                 "smoke",
@@ -341,20 +516,60 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 7093,
-                      "errors": [],
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8116,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts:13:24",
+                        "location": {
+                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
+                          "column": 24,
+                          "line": 13
+                        },
+                        "snippet": "  11 |     await page.goto(\"/cart\");\n  12 |\n> 13 |     await expect(page).toHaveURL(\"/login\");\n     |                        ^\n  14 |     await expect(page.getByRole(\"heading\", { name: /Вход в аккаунт/ })).toBeVisible();\n  15 |   });\n  16 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
+                            "column": 24,
+                            "line": 13
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://127.0.0.1:3000/\u001b[7mlogin\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"http://127.0.0.1:3000/\u001b[7mcart\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    8 × unexpected value \"http://127.0.0.1:3000/cart\"\u001b[22m\n\n\n  11 |     await page.goto(\"/cart\");\n  12 |\n> 13 |     await expect(page).toHaveURL(\"/login\");\n     |                        ^\n  14 |     await expect(page.getByRole(\"heading\", { name: /Вход в аккаунт/ })).toBeVisible();\n  15 |   });\n  16 |\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts:13:24"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:37.360Z",
+                      "startTime": "2026-04-14T13:54:04.890Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-auth-authorization.cri-f0d09-t-route-critical-smoke-auth-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/auth/authorization.critical.spec.ts",
+                        "column": 24,
+                        "line": 13
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "a287ec7a2defdf40464f-57dc7aff695dc2b6cf66",
@@ -379,15 +594,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7167,
+                      "duration": 8201,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:38.104Z",
+                      "startTime": "2026-04-14T13:54:04.891Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -434,15 +649,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 7439,
+                      "duration": 3263,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:38.016Z",
+                      "startTime": "2026-04-14T13:54:14.446Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -472,15 +687,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 6247,
+                      "duration": 2580,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:38.184Z",
+                      "startTime": "2026-04-14T13:54:16.485Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -527,15 +742,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4365,
+                      "duration": 3297,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:46.665Z",
+                      "startTime": "2026-04-14T13:54:14.556Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -565,15 +780,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3986,
+                      "duration": 1772,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:46.868Z",
+                      "startTime": "2026-04-14T13:54:14.979Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -584,6 +799,117 @@
               "id": "bcd48a5c00a5a936952c-b924369d9ad9d9e2d373",
               "file": "e2e/cart/cart.critical.spec.ts",
               "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/cart/cart.midterm.spec.ts",
+      "file": "e2e/cart/cart.midterm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart Midterm",
+          "file": "e2e/cart/cart.midterm.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "rapid double add keeps cart state consistent for the same product @critical @regression @cart",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-CART-CONC-01"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Cart management"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "concurrency"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Authenticated customer double-clicks Add on the same supplier offer for product 101"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Cart records two units of the same product without a UI crash or duplicate supplier groups"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:16.796Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-CART-CONC-01"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Cart management"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "concurrency"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Authenticated customer double-clicks Add on the same supplier offer for product 101"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Cart records two units of the same product without a UI crash or duplicate supplier groups"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQ0FSVC1DT05DLTAxIiwKICAibW9kdWxlIjogIkNhcnQgbWFuYWdlbWVudCIsCiAgInNjZW5hcmlvVHlwZSI6ICJjb25jdXJyZW5jeSIsCiAgImlucHV0RGF0YSI6ICJBdXRoZW50aWNhdGVkIGN1c3RvbWVyIGRvdWJsZS1jbGlja3MgQWRkIG9uIHRoZSBzYW1lIHN1cHBsaWVyIG9mZmVyIGZvciBwcm9kdWN0IDEwMSIsCiAgImV4cGVjdGVkT3V0cHV0IjogIkNhcnQgcmVjb3JkcyB0d28gdW5pdHMgb2YgdGhlIHNhbWUgcHJvZHVjdCB3aXRob3V0IGEgVUkgY3Jhc2ggb3IgZHVwbGljYXRlIHN1cHBsaWVyIGdyb3VwcyIKfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "227de3119a00c929af53-e68920f070898c52d518",
+              "file": "e2e/cart/cart.midterm.spec.ts",
+              "line": 7,
               "column": 7
             }
           ]
@@ -620,15 +946,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3524,
+                      "duration": 2892,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:47.365Z",
+                      "startTime": "2026-04-14T13:54:17.738Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -658,15 +984,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3632,
+                      "duration": 2807,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:47.370Z",
+                      "startTime": "2026-04-14T13:54:17.886Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -677,6 +1003,211 @@
               "id": "69b44a4ac87d1e01ca6d-a095847c156ab45faf60",
               "file": "e2e/catalog/catalog.critical.spec.ts",
               "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/catalog/catalog.midterm.spec.ts",
+      "file": "e2e/catalog/catalog.midterm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Catalog Midterm",
+          "file": "e2e/catalog/catalog.midterm.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "special characters search returns an empty-state instead of crashing @critical @regression @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-CATALOG-EDGE-01"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Product catalog and listing"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "edge"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Search query with special characters only: <script>alert(1)</script>"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Catalog stays responsive and shows the empty-state message for no matching products"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1943,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:19.887Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-CATALOG-EDGE-01"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Product catalog and listing"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "edge"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Search query with special characters only: <script>alert(1)</script>"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Catalog stays responsive and shows the empty-state message for no matching products"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQ0FUQUxPRy1FREdFLTAxIiwKICAibW9kdWxlIjogIlByb2R1Y3QgY2F0YWxvZyBhbmQgbGlzdGluZyIsCiAgInNjZW5hcmlvVHlwZSI6ICJlZGdlIiwKICAiaW5wdXREYXRhIjogIlNlYXJjaCBxdWVyeSB3aXRoIHNwZWNpYWwgY2hhcmFjdGVycyBvbmx5OiA8c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ+IiwKICAiZXhwZWN0ZWRPdXRwdXQiOiAiQ2F0YWxvZyBzdGF5cyByZXNwb25zaXZlIGFuZCBzaG93cyB0aGUgZW1wdHktc3RhdGUgbWVzc2FnZSBmb3Igbm8gbWF0Y2hpbmcgcHJvZHVjdHMiCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7da4273b74f1d1da9256-16012d98efc04da28d1c",
+              "file": "e2e/catalog/catalog.midterm.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "extreme price filter yields no results and keeps the filter state visible @critical @regression @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-CATALOG-EDGE-02"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Product catalog and listing"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "edge"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Minimum price filter set to 999999 while using the real catalog page filters"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "No products are shown and the high min-price value remains applied in the UI"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1844,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:20.275Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-CATALOG-EDGE-02"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Product catalog and listing"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "edge"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Minimum price filter set to 999999 while using the real catalog page filters"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "No products are shown and the high min-price value remains applied in the UI"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQ0FUQUxPRy1FREdFLTAyIiwKICAibW9kdWxlIjogIlByb2R1Y3QgY2F0YWxvZyBhbmQgbGlzdGluZyIsCiAgInNjZW5hcmlvVHlwZSI6ICJlZGdlIiwKICAiaW5wdXREYXRhIjogIk1pbmltdW0gcHJpY2UgZmlsdGVyIHNldCB0byA5OTk5OTkgd2hpbGUgdXNpbmcgdGhlIHJlYWwgY2F0YWxvZyBwYWdlIGZpbHRlcnMiLAogICJleHBlY3RlZE91dHB1dCI6ICJObyBwcm9kdWN0cyBhcmUgc2hvd24gYW5kIHRoZSBoaWdoIG1pbi1wcmljZSB2YWx1ZSByZW1haW5zIGFwcGxpZWQgaW4gdGhlIFVJIgp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7da4273b74f1d1da9256-d03d62b7af323b169a66",
+              "file": "e2e/catalog/catalog.midterm.spec.ts",
+              "line": 27,
               "column": 7
             }
           ]
@@ -713,15 +1244,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 0,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1563,
+                      "duration": 2842,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:50.893Z",
+                      "startTime": "2026-04-14T13:54:20.660Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -751,15 +1282,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1748,
+                      "duration": 2820,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:50.910Z",
+                      "startTime": "2026-04-14T13:54:20.730Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -770,6 +1301,211 @@
               "id": "153b5cedca35198fb425-b9f24be23a4a14423378",
               "file": "e2e/checkout/checkout.critical.spec.ts",
               "line": 23,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/checkout/checkout.midterm.spec.ts",
+      "file": "e2e/checkout/checkout.midterm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkout Midterm",
+          "file": "e2e/checkout/checkout.midterm.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "empty cart cannot generate a payment link even when an address exists @critical @regression @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-CHECKOUT-FAIL-01"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Checkout and payment initiation"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "failure"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Authenticated customer opens checkout with a saved address but an empty cart and clicks payment link creation"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Checkout flow rejects the action with an invalid cart message"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1627,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:21.870Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-CHECKOUT-FAIL-01"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Checkout and payment initiation"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "failure"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Authenticated customer opens checkout with a saved address but an empty cart and clicks payment link creation"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Checkout flow rejects the action with an invalid cart message"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQ0hFQ0tPVVQtRkFJTC0wMSIsCiAgIm1vZHVsZSI6ICJDaGVja291dCBhbmQgcGF5bWVudCBpbml0aWF0aW9uIiwKICAic2NlbmFyaW9UeXBlIjogImZhaWx1cmUiLAogICJpbnB1dERhdGEiOiAiQXV0aGVudGljYXRlZCBjdXN0b21lciBvcGVucyBjaGVja291dCB3aXRoIGEgc2F2ZWQgYWRkcmVzcyBidXQgYW4gZW1wdHkgY2FydCBhbmQgY2xpY2tzIHBheW1lbnQgbGluayBjcmVhdGlvbiIsCiAgImV4cGVjdGVkT3V0cHV0IjogIkNoZWNrb3V0IGZsb3cgcmVqZWN0cyB0aGUgYWN0aW9uIHdpdGggYW4gaW52YWxpZCBjYXJ0IG1lc3NhZ2UiCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f07588f245be8d6b31bd-24a120e4785caa78f761",
+              "file": "e2e/checkout/checkout.midterm.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "empty address fields are blocked before checkout submission @critical @regression @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-CHECKOUT-EDGE-02"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Checkout and payment initiation"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "edge"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Authenticated customer tries to save a new address with blank description and street"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Client-side validation shows an address form error and does not persist a blank address"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1370,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:22.141Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-CHECKOUT-EDGE-02"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Checkout and payment initiation"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "edge"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Authenticated customer tries to save a new address with blank description and street"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Client-side validation shows an address form error and does not persist a blank address"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtQ0hFQ0tPVVQtRURHRS0wMiIsCiAgIm1vZHVsZSI6ICJDaGVja291dCBhbmQgcGF5bWVudCBpbml0aWF0aW9uIiwKICAic2NlbmFyaW9UeXBlIjogImVkZ2UiLAogICJpbnB1dERhdGEiOiAiQXV0aGVudGljYXRlZCBjdXN0b21lciB0cmllcyB0byBzYXZlIGEgbmV3IGFkZHJlc3Mgd2l0aCBibGFuayBkZXNjcmlwdGlvbiBhbmQgc3RyZWV0IiwKICAiZXhwZWN0ZWRPdXRwdXQiOiAiQ2xpZW50LXNpZGUgdmFsaWRhdGlvbiBzaG93cyBhbiBhZGRyZXNzIGZvcm0gZXJyb3IgYW5kIGRvZXMgbm90IHBlcnNpc3QgYSBibGFuayBhZGRyZXNzIgp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f07588f245be8d6b31bd-544516877f9f7b882fcd",
+              "file": "e2e/checkout/checkout.midterm.spec.ts",
+              "line": 33,
               "column": 7
             }
           ]
@@ -806,15 +1542,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1585,
+                      "duration": 2159,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:51.014Z",
+                      "startTime": "2026-04-14T13:54:23.519Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -844,15 +1580,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1640,
+                      "duration": 2253,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-14T12:53:51.044Z",
+                      "startTime": "2026-04-14T13:54:23.521Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -868,15 +1604,165 @@
           ]
         }
       ]
+    },
+    {
+      "title": "e2e/orders/orders.midterm.spec.ts",
+      "file": "e2e/orders/orders.midterm.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Orders Midterm",
+          "file": "e2e/orders/orders.midterm.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "double cancellation leaves the order in a stable cancelled state @critical @regression @orders",
+              "ok": false,
+              "tags": [
+                "critical",
+                "regression",
+                "orders"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "qa.test.id",
+                      "description": "TC-ORDER-CONC-01"
+                    },
+                    {
+                      "type": "qa.module",
+                      "description": "Order lifecycle"
+                    },
+                    {
+                      "type": "qa.scenario",
+                      "description": "concurrency"
+                    },
+                    {
+                      "type": "qa.input",
+                      "description": "Authenticated customer rapidly double-clicks order cancellation for a pending order"
+                    },
+                    {
+                      "type": "qa.expected",
+                      "description": "Order ends in Cancelled state without duplicate rows or a broken detail page"
+                    },
+                    {
+                      "type": "qa.runtimeDependent",
+                      "description": "false"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7994,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts:45:47",
+                        "location": {
+                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
+                          "column": 47,
+                          "line": 45
+                        },
+                        "snippet": "  43 |     await page.reload();\n  44 |\n> 45 |     await expect(page.getByText(\"Cancelled\")).toBeVisible();\n     |                                               ^\n  46 |     await expect(page.getByText(\"Заказ #5001\")).toBeVisible();\n  47 |   });\n  48 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
+                            "column": 47,
+                            "line": 45
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Cancelled')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Cancelled')\u001b[22m\n\n\n  43 |     await page.reload();\n  44 |\n> 45 |     await expect(page.getByText(\"Cancelled\")).toBeVisible();\n     |                                               ^\n  46 |     await expect(page.getByText(\"Заказ #5001\")).toBeVisible();\n  47 |   });\n  48 | });\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts:45:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T13:54:23.539Z",
+                      "annotations": [
+                        {
+                          "type": "qa.test.id",
+                          "description": "TC-ORDER-CONC-01"
+                        },
+                        {
+                          "type": "qa.module",
+                          "description": "Order lifecycle"
+                        },
+                        {
+                          "type": "qa.scenario",
+                          "description": "concurrency"
+                        },
+                        {
+                          "type": "qa.input",
+                          "description": "Authenticated customer rapidly double-clicks order cancellation for a pending order"
+                        },
+                        {
+                          "type": "qa.expected",
+                          "description": "Order ends in Cancelled state without duplicate rows or a broken detail page"
+                        },
+                        {
+                          "type": "qa.runtimeDependent",
+                          "description": "false"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "qa-metadata",
+                          "contentType": "application/json",
+                          "body": "ewogICJ0ZXN0SWQiOiAiVEMtT1JERVItQ09OQy0wMSIsCiAgIm1vZHVsZSI6ICJPcmRlciBsaWZlY3ljbGUiLAogICJzY2VuYXJpb1R5cGUiOiAiY29uY3VycmVuY3kiLAogICJpbnB1dERhdGEiOiAiQXV0aGVudGljYXRlZCBjdXN0b21lciByYXBpZGx5IGRvdWJsZS1jbGlja3Mgb3JkZXIgY2FuY2VsbGF0aW9uIGZvciBhIHBlbmRpbmcgb3JkZXIiLAogICJleHBlY3RlZE91dHB1dCI6ICJPcmRlciBlbmRzIGluIENhbmNlbGxlZCBzdGF0ZSB3aXRob3V0IGR1cGxpY2F0ZSByb3dzIG9yIGEgYnJva2VuIGRldGFpbCBwYWdlIgp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/e2e-orders-orders.midterm--ca8fe--critical-regression-orders-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/e2e/orders/orders.midterm.spec.ts",
+                        "column": 47,
+                        "line": 45
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2a589747fca1e0b1aaeb-4f630c267d0b38539fff",
+              "file": "e2e/orders/orders.midterm.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-14T12:53:24.328Z",
-    "duration": 28401.986,
-    "expected": 12,
-    "skipped": 0,
-    "unexpected": 3,
+    "startTime": "2026-04-14T13:53:57.142Z",
+    "duration": 34471.265,
+    "expected": 18,
+    "skipped": 3,
+    "unexpected": 2,
     "flaky": 0
   }
 }
