@@ -1,0 +1,535 @@
+{"Time":"2026-04-14T18:04:24.612931+05:00","Action":"start","Package":"diploma"}
+{"Time":"2026-04-14T18:04:24.826836+05:00","Action":"output","Package":"diploma","Output":"\tdiploma\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:24.908574+05:00","Action":"pass","Package":"diploma","Elapsed":0.296}
+{"Time":"2026-04-14T18:04:25.081505+05:00","Action":"start","Package":"diploma/cmd"}
+{"Time":"2026-04-14T18:04:25.081548+05:00","Action":"start","Package":"diploma/docs"}
+{"Time":"2026-04-14T18:04:25.081659+05:00","Action":"start","Package":"diploma/internal/app"}
+{"Time":"2026-04-14T18:04:25.081738+05:00","Action":"start","Package":"diploma/internal/config"}
+{"Time":"2026-04-14T18:04:25.081877+05:00","Action":"start","Package":"diploma/internal/testutils"}
+{"Time":"2026-04-14T18:04:25.08191+05:00","Action":"start","Package":"diploma/modules/auth"}
+{"Time":"2026-04-14T18:04:25.081945+05:00","Action":"start","Package":"diploma/modules/auth/handler"}
+{"Time":"2026-04-14T18:04:25.251687+05:00","Action":"output","Package":"diploma/internal/app","Output":"\tdiploma/internal/app\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.252151+05:00","Action":"output","Package":"diploma/modules/auth/handler","Output":"\tdiploma/modules/auth/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.252955+05:00","Action":"output","Package":"diploma/docs","Output":"\tdiploma/docs\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.254539+05:00","Action":"output","Package":"diploma/internal/config","Output":"\tdiploma/internal/config\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.257277+05:00","Action":"output","Package":"diploma/modules/auth","Output":"\tdiploma/modules/auth\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.257333+05:00","Action":"output","Package":"diploma/internal/testutils","Output":"\tdiploma/internal/testutils\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.258895+05:00","Action":"output","Package":"diploma/cmd","Output":"\tdiploma/cmd\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.383479+05:00","Action":"pass","Package":"diploma/internal/app","Elapsed":0.302}
+{"Time":"2026-04-14T18:04:25.383546+05:00","Action":"start","Package":"diploma/modules/auth/handler/converter"}
+{"Time":"2026-04-14T18:04:25.418077+05:00","Action":"pass","Package":"diploma/docs","Elapsed":0.337}
+{"Time":"2026-04-14T18:04:25.418133+05:00","Action":"start","Package":"diploma/modules/auth/handler/model"}
+{"Time":"2026-04-14T18:04:25.418308+05:00","Action":"output","Package":"diploma/modules/auth/handler/model","Output":"?   \tdiploma/modules/auth/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.418322+05:00","Action":"skip","Package":"diploma/modules/auth/handler/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418339+05:00","Action":"start","Package":"diploma/modules/auth/jwt"}
+{"Time":"2026-04-14T18:04:25.418347+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens"}
+{"Time":"2026-04-14T18:04:25.418351+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens","Output":"=== RUN   TestGenerateAndVerifyTokens\n"}
+{"Time":"2026-04-14T18:04:25.418354+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens","Output":"=== PAUSE TestGenerateAndVerifyTokens\n"}
+{"Time":"2026-04-14T18:04:25.418357+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens"}
+{"Time":"2026-04-14T18:04:25.418371+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken"}
+{"Time":"2026-04-14T18:04:25.418374+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken","Output":"=== RUN   TestRefreshAccessToken\n"}
+{"Time":"2026-04-14T18:04:25.41838+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken","Output":"=== PAUSE TestRefreshAccessToken\n"}
+{"Time":"2026-04-14T18:04:25.418383+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken"}
+{"Time":"2026-04-14T18:04:25.418392+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens"}
+{"Time":"2026-04-14T18:04:25.418395+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens","Output":"=== RUN   TestVerifyTokenRejectsInvalidAndExpiredTokens\n"}
+{"Time":"2026-04-14T18:04:25.418402+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens","Output":"=== PAUSE TestVerifyTokenRejectsInvalidAndExpiredTokens\n"}
+{"Time":"2026-04-14T18:04:25.418405+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens"}
+{"Time":"2026-04-14T18:04:25.418408+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken"}
+{"Time":"2026-04-14T18:04:25.41841+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken","Output":"=== RUN   TestRefreshAccessTokenRejectsInvalidToken\n"}
+{"Time":"2026-04-14T18:04:25.418413+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken","Output":"=== PAUSE TestRefreshAccessTokenRejectsInvalidToken\n"}
+{"Time":"2026-04-14T18:04:25.418416+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken"}
+{"Time":"2026-04-14T18:04:25.418419+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken"}
+{"Time":"2026-04-14T18:04:25.418422+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken","Output":"=== RUN   TestVerifyTokenRejectsTamperedToken\n"}
+{"Time":"2026-04-14T18:04:25.418424+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken","Output":"=== PAUSE TestVerifyTokenRejectsTamperedToken\n"}
+{"Time":"2026-04-14T18:04:25.418427+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken"}
+{"Time":"2026-04-14T18:04:25.418429+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader"}
+{"Time":"2026-04-14T18:04:25.418432+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader","Output":"=== RUN   TestExtractTokenFromHeader\n"}
+{"Time":"2026-04-14T18:04:25.418434+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader","Output":"=== PAUSE TestExtractTokenFromHeader\n"}
+{"Time":"2026-04-14T18:04:25.418436+05:00","Action":"pause","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader"}
+{"Time":"2026-04-14T18:04:25.418449+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens"}
+{"Time":"2026-04-14T18:04:25.418453+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens","Output":"=== CONT  TestGenerateAndVerifyTokens\n"}
+{"Time":"2026-04-14T18:04:25.418456+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken"}
+{"Time":"2026-04-14T18:04:25.418459+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken","Output":"=== CONT  TestRefreshAccessTokenRejectsInvalidToken\n"}
+{"Time":"2026-04-14T18:04:25.418464+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken","Output":"--- PASS: TestRefreshAccessTokenRejectsInvalidToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418467+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessTokenRejectsInvalidToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.41847+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader"}
+{"Time":"2026-04-14T18:04:25.418473+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader","Output":"=== CONT  TestExtractTokenFromHeader\n"}
+{"Time":"2026-04-14T18:04:25.418479+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/valid_bearer_token"}
+{"Time":"2026-04-14T18:04:25.418481+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/valid_bearer_token","Output":"=== RUN   TestExtractTokenFromHeader/valid_bearer_token\n"}
+{"Time":"2026-04-14T18:04:25.418491+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/valid_bearer_token","Output":"--- PASS: TestExtractTokenFromHeader/valid_bearer_token (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418498+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/valid_bearer_token","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418501+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/missing_bearer_prefix"}
+{"Time":"2026-04-14T18:04:25.418504+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/missing_bearer_prefix","Output":"=== RUN   TestExtractTokenFromHeader/missing_bearer_prefix\n"}
+{"Time":"2026-04-14T18:04:25.418506+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/missing_bearer_prefix","Output":"--- PASS: TestExtractTokenFromHeader/missing_bearer_prefix (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418509+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/missing_bearer_prefix","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418513+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/empty_header"}
+{"Time":"2026-04-14T18:04:25.418519+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/empty_header","Output":"=== RUN   TestExtractTokenFromHeader/empty_header\n"}
+{"Time":"2026-04-14T18:04:25.418522+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/empty_header","Output":"--- PASS: TestExtractTokenFromHeader/empty_header (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418525+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/empty_header","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418527+05:00","Action":"run","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/invalid_format"}
+{"Time":"2026-04-14T18:04:25.41853+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/invalid_format","Output":"=== RUN   TestExtractTokenFromHeader/invalid_format\n"}
+{"Time":"2026-04-14T18:04:25.418532+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/invalid_format","Output":"--- PASS: TestExtractTokenFromHeader/invalid_format (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418535+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader/invalid_format","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418537+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader","Output":"--- PASS: TestExtractTokenFromHeader (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418542+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestExtractTokenFromHeader","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418545+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken"}
+{"Time":"2026-04-14T18:04:25.418548+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken","Output":"=== CONT  TestVerifyTokenRejectsTamperedToken\n"}
+{"Time":"2026-04-14T18:04:25.418551+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens"}
+{"Time":"2026-04-14T18:04:25.418553+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens","Output":"=== CONT  TestVerifyTokenRejectsInvalidAndExpiredTokens\n"}
+{"Time":"2026-04-14T18:04:25.418559+05:00","Action":"cont","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken"}
+{"Time":"2026-04-14T18:04:25.418562+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken","Output":"=== CONT  TestRefreshAccessToken\n"}
+{"Time":"2026-04-14T18:04:25.418566+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens","Output":"--- PASS: TestGenerateAndVerifyTokens (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418569+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestGenerateAndVerifyTokens","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418571+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken","Output":"--- PASS: TestVerifyTokenRejectsTamperedToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418574+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsTamperedToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418577+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens","Output":"--- PASS: TestVerifyTokenRejectsInvalidAndExpiredTokens (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418579+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestVerifyTokenRejectsInvalidAndExpiredTokens","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418582+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken","Output":"--- PASS: TestRefreshAccessToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418585+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Test":"TestRefreshAccessToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418587+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:25.41859+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Output":"coverage: 84.8% of statements\n"}
+{"Time":"2026-04-14T18:04:25.418592+05:00","Action":"output","Package":"diploma/modules/auth/jwt","Output":"ok  \tdiploma/modules/auth/jwt\t(cached)\tcoverage: 84.8% of statements\n"}
+{"Time":"2026-04-14T18:04:25.418602+05:00","Action":"pass","Package":"diploma/modules/auth/jwt","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418908+05:00","Action":"start","Package":"diploma/modules/auth/middleware"}
+{"Time":"2026-04-14T18:04:25.418929+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware"}
+{"Time":"2026-04-14T18:04:25.418935+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware","Output":"=== RUN   TestAuthMiddleware\n"}
+{"Time":"2026-04-14T18:04:25.418939+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ExpiredToken"}
+{"Time":"2026-04-14T18:04:25.418943+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ExpiredToken","Output":"=== RUN   TestAuthMiddleware/TestAuthMiddleware_ExpiredToken\n"}
+{"Time":"2026-04-14T18:04:25.41895+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ExpiredToken","Output":"--- PASS: TestAuthMiddleware/TestAuthMiddleware_ExpiredToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418954+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ExpiredToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418957+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader"}
+{"Time":"2026-04-14T18:04:25.41896+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader","Output":"=== RUN   TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader\n"}
+{"Time":"2026-04-14T18:04:25.41897+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader","Output":"--- PASS: TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418976+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidAuthHeader","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.418979+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidToken"}
+{"Time":"2026-04-14T18:04:25.418982+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidToken","Output":"=== RUN   TestAuthMiddleware/TestAuthMiddleware_InvalidToken\n"}
+{"Time":"2026-04-14T18:04:25.418985+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidToken","Output":"--- PASS: TestAuthMiddleware/TestAuthMiddleware_InvalidToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.418988+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_InvalidToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.41899+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader"}
+{"Time":"2026-04-14T18:04:25.418993+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader","Output":"=== RUN   TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader\n"}
+{"Time":"2026-04-14T18:04:25.418996+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader","Output":"--- PASS: TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.419155+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_NoAuthHeader","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.419196+05:00","Action":"run","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ValidToken"}
+{"Time":"2026-04-14T18:04:25.419217+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ValidToken","Output":"=== RUN   TestAuthMiddleware/TestAuthMiddleware_ValidToken\n"}
+{"Time":"2026-04-14T18:04:25.419231+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ValidToken","Output":"--- PASS: TestAuthMiddleware/TestAuthMiddleware_ValidToken (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.419239+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware/TestAuthMiddleware_ValidToken","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.419248+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware","Output":"--- PASS: TestAuthMiddleware (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.419256+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Test":"TestAuthMiddleware","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.419263+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:25.41927+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Output":"coverage: 100.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.419277+05:00","Action":"output","Package":"diploma/modules/auth/middleware","Output":"ok  \tdiploma/modules/auth/middleware\t(cached)\tcoverage: 100.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.419291+05:00","Action":"pass","Package":"diploma/modules/auth/middleware","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.419791+05:00","Action":"start","Package":"diploma/modules/auth/model"}
+{"Time":"2026-04-14T18:04:25.419935+05:00","Action":"output","Package":"diploma/modules/auth/model","Output":"?   \tdiploma/modules/auth/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.419944+05:00","Action":"skip","Package":"diploma/modules/auth/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.419946+05:00","Action":"pass","Package":"diploma/cmd","Elapsed":0.338}
+{"Time":"2026-04-14T18:04:25.419955+05:00","Action":"start","Package":"diploma/modules/auth/repository/user"}
+{"Time":"2026-04-14T18:04:25.419975+05:00","Action":"start","Package":"diploma/modules/auth/repository/user/converter"}
+{"Time":"2026-04-14T18:04:25.430981+05:00","Action":"pass","Package":"diploma/modules/auth","Elapsed":0.349}
+{"Time":"2026-04-14T18:04:25.431039+05:00","Action":"start","Package":"diploma/modules/auth/repository/user/model"}
+{"Time":"2026-04-14T18:04:25.431184+05:00","Action":"output","Package":"diploma/modules/auth/repository/user/model","Output":"?   \tdiploma/modules/auth/repository/user/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.431199+05:00","Action":"skip","Package":"diploma/modules/auth/repository/user/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.431208+05:00","Action":"start","Package":"diploma/modules/auth/service/auth"}
+{"Time":"2026-04-14T18:04:25.431219+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService"}
+{"Time":"2026-04-14T18:04:25.431274+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService","Output":"=== RUN   TestAuthService\n"}
+{"Time":"2026-04-14T18:04:25.431278+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials"}
+{"Time":"2026-04-14T18:04:25.43128+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials","Output":"=== RUN   TestAuthService/TestLogin_InvalidCredentials\n"}
+{"Time":"2026-04-14T18:04:25.431285+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials","Output":"2026-04-14T18:02:24.289+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:59\tAttempting user login\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431292+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials","Output":"2026-04-14T18:02:24.289+0500\t\u001b[33mWARN\u001b[0m\tauth/register.go:64\tLogin attempt with non-existent phone number\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431298+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials","Output":"--- PASS: TestAuthService/TestLogin_InvalidCredentials (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.431301+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_InvalidCredentials","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.431303+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success"}
+{"Time":"2026-04-14T18:04:25.431306+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success","Output":"=== RUN   TestAuthService/TestLogin_Success\n"}
+{"Time":"2026-04-14T18:04:25.431309+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success","Output":"2026-04-14T18:02:24.635+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:59\tAttempting user login\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431311+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success","Output":"2026-04-14T18:02:24.937+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:82\tUser login successful\t{\"service\": \"auth\", \"user_id\": 1, \"phone_number\": \"+1234567890\", \"name\": \"testuser\"}\n"}
+{"Time":"2026-04-14T18:04:25.431315+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success","Output":"--- PASS: TestAuthService/TestLogin_Success (0.65s)\n"}
+{"Time":"2026-04-14T18:04:25.431324+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_Success","Elapsed":0.65}
+{"Time":"2026-04-14T18:04:25.431327+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword"}
+{"Time":"2026-04-14T18:04:25.431329+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword","Output":"=== RUN   TestAuthService/TestLogin_WrongPassword\n"}
+{"Time":"2026-04-14T18:04:25.431332+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword","Output":"2026-04-14T18:02:25.388+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:59\tAttempting user login\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431335+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword","Output":"2026-04-14T18:02:25.613+0500\t\u001b[33mWARN\u001b[0m\tauth/register.go:72\tInvalid password attempt\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431338+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword","Output":"--- PASS: TestAuthService/TestLogin_WrongPassword (0.68s)\n"}
+{"Time":"2026-04-14T18:04:25.43134+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestLogin_WrongPassword","Elapsed":0.68}
+{"Time":"2026-04-14T18:04:25.431343+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure"}
+{"Time":"2026-04-14T18:04:25.431348+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure","Output":"=== RUN   TestAuthService/TestRegister_AdminRole_Failure\n"}
+{"Time":"2026-04-14T18:04:25.431351+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure","Output":"2026-04-14T18:02:25.613+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:14\tStarting user registration\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431354+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure","Output":"2026-04-14T18:02:25.674+0500\t\u001b[33mWARN\u001b[0m\tauth/register.go:25\tAttempted to register with admin role\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431357+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure","Output":"--- PASS: TestAuthService/TestRegister_AdminRole_Failure (0.06s)\n"}
+{"Time":"2026-04-14T18:04:25.431359+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_AdminRole_Failure","Elapsed":0.06}
+{"Time":"2026-04-14T18:04:25.431362+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError"}
+{"Time":"2026-04-14T18:04:25.431368+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"=== RUN   TestAuthService/TestRegister_RepositoryError\n"}
+{"Time":"2026-04-14T18:04:25.431372+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"2026-04-14T18:02:25.674+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:14\tStarting user registration\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431375+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"2026-04-14T18:02:25.733+0500\t\u001b[31mERROR\u001b[0m\tauth/register.go:33\tFailed to create user\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\", \"error\": \"database error\"}\n"}
+{"Time":"2026-04-14T18:04:25.431382+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"diploma/modules/auth/service/auth.(*authServ).Register.func1\n"}
+{"Time":"2026-04-14T18:04:25.431385+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/Users/sergazieff.n/VSCodeProjects/aqa_midterm/backend/modules/auth/service/auth/register.go:33\n"}
+{"Time":"2026-04-14T18:04:25.431389+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"diploma/modules/auth/service/auth.(*mockTxManager).ReadCommitted\n"}
+{"Time":"2026-04-14T18:04:25.431391+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/Users/sergazieff.n/VSCodeProjects/aqa_midterm/backend/modules/auth/service/auth/service_test.go:49\n"}
+{"Time":"2026-04-14T18:04:25.431394+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"diploma/modules/auth/service/auth.(*authServ).Register\n"}
+{"Time":"2026-04-14T18:04:25.431396+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/Users/sergazieff.n/VSCodeProjects/aqa_midterm/backend/modules/auth/service/auth/register.go:29\n"}
+{"Time":"2026-04-14T18:04:25.431399+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"diploma/modules/auth/service/auth.(*AuthServiceTestSuite).TestRegister_RepositoryError\n"}
+{"Time":"2026-04-14T18:04:25.431401+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/Users/sergazieff.n/VSCodeProjects/aqa_midterm/backend/modules/auth/service/auth/service_test.go:223\n"}
+{"Time":"2026-04-14T18:04:25.431404+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"reflect.Value.call\n"}
+{"Time":"2026-04-14T18:04:25.431406+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/opt/homebrew/Cellar/go/1.26.2/libexec/src/reflect/value.go:586\n"}
+{"Time":"2026-04-14T18:04:25.431411+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"reflect.Value.Call\n"}
+{"Time":"2026-04-14T18:04:25.431413+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/opt/homebrew/Cellar/go/1.26.2/libexec/src/reflect/value.go:369\n"}
+{"Time":"2026-04-14T18:04:25.431416+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"github.com/stretchr/testify/suite.Run.func1\n"}
+{"Time":"2026-04-14T18:04:25.431418+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/tmp/go-mod/github.com/stretchr/testify@v1.10.0/suite/suite.go:202\n"}
+{"Time":"2026-04-14T18:04:25.431421+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"testing.tRunner\n"}
+{"Time":"2026-04-14T18:04:25.431463+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"\t/opt/homebrew/Cellar/go/1.26.2/libexec/src/testing/testing.go:2036\n"}
+{"Time":"2026-04-14T18:04:25.431479+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Output":"--- PASS: TestAuthService/TestRegister_RepositoryError (0.06s)\n"}
+{"Time":"2026-04-14T18:04:25.431492+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_RepositoryError","Elapsed":0.06}
+{"Time":"2026-04-14T18:04:25.431497+05:00","Action":"run","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success"}
+{"Time":"2026-04-14T18:04:25.4315+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success","Output":"=== RUN   TestAuthService/TestRegister_Success\n"}
+{"Time":"2026-04-14T18:04:25.431503+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success","Output":"2026-04-14T18:02:25.733+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:14\tStarting user registration\t{\"service\": \"auth\", \"phone_number\": \"+1234567890\"}\n"}
+{"Time":"2026-04-14T18:04:25.431506+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success","Output":"2026-04-14T18:02:25.792+0500\t\u001b[34mINFO\u001b[0m\tauth/register.go:50\tUser registration successful\t{\"service\": \"auth\", \"user_id\": 1, \"phone_number\": \"+1234567890\", \"name\": \"testuser\"}\n"}
+{"Time":"2026-04-14T18:04:25.43151+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success","Output":"--- PASS: TestAuthService/TestRegister_Success (0.06s)\n"}
+{"Time":"2026-04-14T18:04:25.431513+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService/TestRegister_Success","Elapsed":0.06}
+{"Time":"2026-04-14T18:04:25.431516+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService","Output":"--- PASS: TestAuthService (1.50s)\n"}
+{"Time":"2026-04-14T18:04:25.431519+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Test":"TestAuthService","Elapsed":1.5}
+{"Time":"2026-04-14T18:04:25.431522+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:25.431525+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Output":"coverage: 81.4% of statements\n"}
+{"Time":"2026-04-14T18:04:25.431527+05:00","Action":"output","Package":"diploma/modules/auth/service/auth","Output":"ok  \tdiploma/modules/auth/service/auth\t(cached)\tcoverage: 81.4% of statements\n"}
+{"Time":"2026-04-14T18:04:25.431535+05:00","Action":"pass","Package":"diploma/modules/auth/service/auth","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.431764+05:00","Action":"start","Package":"diploma/modules/cart"}
+{"Time":"2026-04-14T18:04:25.452293+05:00","Action":"pass","Package":"diploma/modules/auth/handler","Elapsed":0.37}
+{"Time":"2026-04-14T18:04:25.452344+05:00","Action":"start","Package":"diploma/modules/cart/client/order"}
+{"Time":"2026-04-14T18:04:25.452537+05:00","Action":"pass","Package":"diploma/internal/config","Elapsed":0.371}
+{"Time":"2026-04-14T18:04:25.452564+05:00","Action":"start","Package":"diploma/modules/cart/client/payment"}
+{"Time":"2026-04-14T18:04:25.53739+05:00","Action":"pass","Package":"diploma/internal/testutils","Elapsed":0.456}
+{"Time":"2026-04-14T18:04:25.537858+05:00","Action":"start","Package":"diploma/modules/cart/client/payment/converter"}
+{"Time":"2026-04-14T18:04:25.540375+05:00","Action":"output","Package":"diploma/modules/auth/handler/converter","Output":"\tdiploma/modules/auth/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.574003+05:00","Action":"output","Package":"diploma/modules/auth/repository/user","Output":"\tdiploma/modules/auth/repository/user\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.577399+05:00","Action":"output","Package":"diploma/modules/auth/repository/user/converter","Output":"\tdiploma/modules/auth/repository/user/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.609742+05:00","Action":"output","Package":"diploma/modules/cart/client/payment","Output":"\tdiploma/modules/cart/client/payment\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.617692+05:00","Action":"output","Package":"diploma/modules/cart","Output":"\tdiploma/modules/cart\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.669297+05:00","Action":"start","Package":"diploma/modules/cart/client/payment/model"}
+{"Time":"2026-04-14T18:04:25.692925+05:00","Action":"output","Package":"diploma/modules/cart/client/order","Output":"\tdiploma/modules/cart/client/order\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.705373+05:00","Action":"pass","Package":"diploma/modules/auth/handler/converter","Elapsed":0.322}
+{"Time":"2026-04-14T18:04:25.705485+05:00","Action":"start","Package":"diploma/modules/cart/client/supplier"}
+{"Time":"2026-04-14T18:04:25.742273+05:00","Action":"output","Package":"diploma/modules/cart/client/payment/converter","Output":"\tdiploma/modules/cart/client/payment/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.776776+05:00","Action":"pass","Package":"diploma/modules/auth/repository/user/converter","Elapsed":0.357}
+{"Time":"2026-04-14T18:04:25.77683+05:00","Action":"start","Package":"diploma/modules/cart/handler"}
+{"Time":"2026-04-14T18:04:25.785427+05:00","Action":"output","Package":"diploma/modules/cart/client/payment/model","Output":"\tdiploma/modules/cart/client/payment/model\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.791269+05:00","Action":"pass","Package":"diploma/modules/cart","Elapsed":0.36}
+{"Time":"2026-04-14T18:04:25.791317+05:00","Action":"start","Package":"diploma/modules/cart/handler/converter"}
+{"Time":"2026-04-14T18:04:25.827079+05:00","Action":"pass","Package":"diploma/modules/auth/repository/user","Elapsed":0.407}
+{"Time":"2026-04-14T18:04:25.827243+05:00","Action":"start","Package":"diploma/modules/cart/handler/model"}
+{"Time":"2026-04-14T18:04:25.827579+05:00","Action":"output","Package":"diploma/modules/cart/handler/model","Output":"?   \tdiploma/modules/cart/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.827601+05:00","Action":"skip","Package":"diploma/modules/cart/handler/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.827619+05:00","Action":"start","Package":"diploma/modules/cart/model"}
+{"Time":"2026-04-14T18:04:25.827993+05:00","Action":"output","Package":"diploma/modules/cart/model","Output":"?   \tdiploma/modules/cart/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.828012+05:00","Action":"skip","Package":"diploma/modules/cart/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.828025+05:00","Action":"start","Package":"diploma/modules/cart/redis"}
+{"Time":"2026-04-14T18:04:25.844802+05:00","Action":"pass","Package":"diploma/modules/cart/client/order","Elapsed":0.392}
+{"Time":"2026-04-14T18:04:25.844862+05:00","Action":"start","Package":"diploma/modules/cart/repository"}
+{"Time":"2026-04-14T18:04:25.857109+05:00","Action":"output","Package":"diploma/modules/cart/client/supplier","Output":"\tdiploma/modules/cart/client/supplier\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.902906+05:00","Action":"pass","Package":"diploma/modules/cart/client/payment","Elapsed":0.45}
+{"Time":"2026-04-14T18:04:25.902962+05:00","Action":"start","Package":"diploma/modules/cart/repository/converter"}
+{"Time":"2026-04-14T18:04:25.907339+05:00","Action":"output","Package":"diploma/modules/cart/handler","Output":"\tdiploma/modules/cart/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:25.91556+05:00","Action":"pass","Package":"diploma/modules/cart/client/payment/converter","Elapsed":0.378}
+{"Time":"2026-04-14T18:04:25.91561+05:00","Action":"start","Package":"diploma/modules/cart/repository/model"}
+{"Time":"2026-04-14T18:04:25.915777+05:00","Action":"output","Package":"diploma/modules/cart/repository/model","Output":"?   \tdiploma/modules/cart/repository/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:25.915785+05:00","Action":"skip","Package":"diploma/modules/cart/repository/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915801+05:00","Action":"start","Package":"diploma/modules/cart/service"}
+{"Time":"2026-04-14T18:04:25.915808+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartService"}
+{"Time":"2026-04-14T18:04:25.915811+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService","Output":"=== RUN   TestCartService\n"}
+{"Time":"2026-04-14T18:04:25.915816+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem"}
+{"Time":"2026-04-14T18:04:25.915819+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"=== RUN   TestCartService/TestAddProductToCard_CreatesCartAndAddsItem\n"}
+{"Time":"2026-04-14T18:04:25.915826+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"2026-04-14T18:02:24.686+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:12\tAdding product to cart\t{\"service\": \"cart\", \"customer_id\": 1, \"product_id\": 101, \"supplier_id\": 201, \"quantity\": 2}\n"}
+{"Time":"2026-04-14T18:04:25.915832+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"2026-04-14T18:02:24.687+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:23\tCart not found, creating new cart\t{\"service\": \"cart\", \"customer_id\": 1}\n"}
+{"Time":"2026-04-14T18:04:25.915839+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"2026-04-14T18:02:24.687+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:57\tAdding new item to cart\t{\"service\": \"cart\", \"cart_id\": 77, \"product_id\": 101, \"quantity\": 2}\n"}
+{"Time":"2026-04-14T18:04:25.915843+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"2026-04-14T18:02:24.687+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:102\tSuccessfully added product to cart\t{\"service\": \"cart\", \"customer_id\": 1, \"product_id\": 101, \"quantity\": 2}\n"}
+{"Time":"2026-04-14T18:04:25.915848+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Output":"--- PASS: TestCartService/TestAddProductToCard_CreatesCartAndAddsItem (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915853+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartService/TestAddProductToCard_CreatesCartAndAddsItem","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915855+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_RejectsForeignAddress"}
+{"Time":"2026-04-14T18:04:25.915858+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_RejectsForeignAddress","Output":"=== RUN   TestCartService/TestCheckout_RejectsForeignAddress\n"}
+{"Time":"2026-04-14T18:04:25.915863+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_RejectsForeignAddress","Output":"--- PASS: TestCartService/TestCheckout_RejectsForeignAddress (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915866+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_RejectsForeignAddress","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915868+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder"}
+{"Time":"2026-04-14T18:04:25.91587+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder","Output":"=== RUN   TestCartService/TestCheckout_SavesPaymentOrder\n"}
+{"Time":"2026-04-14T18:04:25.915873+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder","Output":"2026-04-14T18:02:24.687+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:111\tFetching cart\t{\"service\": \"cart\", \"user_id\": 1}\n"}
+{"Time":"2026-04-14T18:04:25.915882+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder","Output":"2026-04-14T18:02:24.687+0500\t\u001b[34mINFO\u001b[0m\tservice/cart.go:200\tSuccessfully fetched cart\t{\"service\": \"cart\", \"user_id\": 1, \"cart_id\": 7, \"total_amount\": 3000, \"supplier_count\": 1}\n"}
+{"Time":"2026-04-14T18:04:25.915885+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder","Output":"--- PASS: TestCartService/TestCheckout_SavesPaymentOrder (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915888+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCheckout_SavesPaymentOrder","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.91589+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart"}
+{"Time":"2026-04-14T18:04:25.915893+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart","Output":"=== RUN   TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart\n"}
+{"Time":"2026-04-14T18:04:25.915895+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart","Output":"CommitCheckout {1-5-order approved}\n"}
+{"Time":"2026-04-14T18:04:25.915898+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart","Output":"--- PASS: TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915901+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartService/TestCommitCheckout_Approved_CreatesOrderAndClearsCart","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915908+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartService","Output":"--- PASS: TestCartService (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915911+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartService","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915914+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules"}
+{"Time":"2026-04-14T18:04:25.915918+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules","Output":"=== RUN   TestCartBusinessRules\n"}
+{"Time":"2026-04-14T18:04:25.915921+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules","Output":"=== PAUSE TestCartBusinessRules\n"}
+{"Time":"2026-04-14T18:04:25.915923+05:00","Action":"pause","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules"}
+{"Time":"2026-04-14T18:04:25.915926+05:00","Action":"cont","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules"}
+{"Time":"2026-04-14T18:04:25.915928+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules","Output":"=== CONT  TestCartBusinessRules\n"}
+{"Time":"2026-04-14T18:04:25.915931+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold"}
+{"Time":"2026-04-14T18:04:25.915933+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold","Output":"=== RUN   TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold\n"}
+{"Time":"2026-04-14T18:04:25.915936+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold","Output":"=== PAUSE TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold\n"}
+{"Time":"2026-04-14T18:04:25.915943+05:00","Action":"pause","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold"}
+{"Time":"2026-04-14T18:04:25.915946+05:00","Action":"run","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier"}
+{"Time":"2026-04-14T18:04:25.915951+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier","Output":"=== RUN   TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier\n"}
+{"Time":"2026-04-14T18:04:25.915955+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier","Output":"=== PAUSE TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier\n"}
+{"Time":"2026-04-14T18:04:25.915957+05:00","Action":"pause","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier"}
+{"Time":"2026-04-14T18:04:25.91596+05:00","Action":"cont","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold"}
+{"Time":"2026-04-14T18:04:25.915962+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold","Output":"=== CONT  TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold\n"}
+{"Time":"2026-04-14T18:04:25.915965+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold","Output":"--- PASS: TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.91597+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/getTotalSupplier_adds_delivery_fee_below_threshold","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915972+05:00","Action":"cont","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier"}
+{"Time":"2026-04-14T18:04:25.915975+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier","Output":"=== CONT  TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier\n"}
+{"Time":"2026-04-14T18:04:25.915978+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier","Output":"--- PASS: TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.91598+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules/checkCartForCheckout_rejects_invalid_quantity_and_under-minimum_supplier","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915984+05:00","Action":"output","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules","Output":"--- PASS: TestCartBusinessRules (0.00s)\n"}
+{"Time":"2026-04-14T18:04:25.915986+05:00","Action":"pass","Package":"diploma/modules/cart/service","Test":"TestCartBusinessRules","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.915989+05:00","Action":"output","Package":"diploma/modules/cart/service","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:25.915991+05:00","Action":"output","Package":"diploma/modules/cart/service","Output":"coverage: 48.1% of statements\n"}
+{"Time":"2026-04-14T18:04:25.915993+05:00","Action":"output","Package":"diploma/modules/cart/service","Output":"ok  \tdiploma/modules/cart/service\t(cached)\tcoverage: 48.1% of statements\n"}
+{"Time":"2026-04-14T18:04:25.916+05:00","Action":"pass","Package":"diploma/modules/cart/service","Elapsed":0}
+{"Time":"2026-04-14T18:04:25.916293+05:00","Action":"start","Package":"diploma/modules/contract"}
+{"Time":"2026-04-14T18:04:25.955013+05:00","Action":"pass","Package":"diploma/modules/cart/client/payment/model","Elapsed":0.286}
+{"Time":"2026-04-14T18:04:25.955098+05:00","Action":"start","Package":"diploma/modules/contract/handler"}
+{"Time":"2026-04-14T18:04:25.985255+05:00","Action":"output","Package":"diploma/modules/cart/handler/converter","Output":"\tdiploma/modules/cart/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.015285+05:00","Action":"pass","Package":"diploma/modules/cart/client/supplier","Elapsed":0.31}
+{"Time":"2026-04-14T18:04:26.015353+05:00","Action":"start","Package":"diploma/modules/contract/handler/converter"}
+{"Time":"2026-04-14T18:04:26.025951+05:00","Action":"output","Package":"diploma/modules/cart/repository","Output":"\tdiploma/modules/cart/repository\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.034312+05:00","Action":"output","Package":"diploma/modules/cart/repository/converter","Output":"\tdiploma/modules/cart/repository/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.052212+05:00","Action":"pass","Package":"diploma/modules/cart/handler","Elapsed":0.275}
+{"Time":"2026-04-14T18:04:26.052268+05:00","Action":"start","Package":"diploma/modules/contract/handler/model"}
+{"Time":"2026-04-14T18:04:26.052425+05:00","Action":"output","Package":"diploma/modules/contract/handler/model","Output":"?   \tdiploma/modules/contract/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.052435+05:00","Action":"skip","Package":"diploma/modules/contract/handler/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.052444+05:00","Action":"start","Package":"diploma/modules/contract/model"}
+{"Time":"2026-04-14T18:04:26.052582+05:00","Action":"output","Package":"diploma/modules/contract/model","Output":"?   \tdiploma/modules/contract/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.052587+05:00","Action":"skip","Package":"diploma/modules/contract/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.052592+05:00","Action":"start","Package":"diploma/modules/contract/repo"}
+{"Time":"2026-04-14T18:04:26.085492+05:00","Action":"output","Package":"diploma/modules/contract","Output":"\tdiploma/modules/contract\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.097885+05:00","Action":"output","Package":"diploma/modules/cart/redis","Output":"\tdiploma/modules/cart/redis\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.14989+05:00","Action":"output","Package":"diploma/modules/contract/handler","Output":"\tdiploma/modules/contract/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.158642+05:00","Action":"pass","Package":"diploma/modules/cart/handler/converter","Elapsed":0.367}
+{"Time":"2026-04-14T18:04:26.158704+05:00","Action":"start","Package":"diploma/modules/contract/service"}
+{"Time":"2026-04-14T18:04:26.158871+05:00","Action":"pass","Package":"diploma/modules/cart/repository","Elapsed":0.314}
+{"Time":"2026-04-14T18:04:26.158929+05:00","Action":"start","Package":"diploma/modules/notification"}
+{"Time":"2026-04-14T18:04:26.210677+05:00","Action":"output","Package":"diploma/modules/contract/repo","Output":"\tdiploma/modules/contract/repo\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.213763+05:00","Action":"output","Package":"diploma/modules/contract/handler/converter","Output":"\tdiploma/modules/contract/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.213906+05:00","Action":"pass","Package":"diploma/modules/cart/repository/converter","Elapsed":0.311}
+{"Time":"2026-04-14T18:04:26.214039+05:00","Action":"start","Package":"diploma/modules/notification/handler"}
+{"Time":"2026-04-14T18:04:26.260266+05:00","Action":"pass","Package":"diploma/modules/contract","Elapsed":0.344}
+{"Time":"2026-04-14T18:04:26.260343+05:00","Action":"start","Package":"diploma/modules/notification/model"}
+{"Time":"2026-04-14T18:04:26.260506+05:00","Action":"output","Package":"diploma/modules/notification/model","Output":"?   \tdiploma/modules/notification/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.260517+05:00","Action":"skip","Package":"diploma/modules/notification/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.260527+05:00","Action":"start","Package":"diploma/modules/notification/repository"}
+{"Time":"2026-04-14T18:04:26.337292+05:00","Action":"output","Package":"diploma/modules/contract/service","Output":"\tdiploma/modules/contract/service\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.35744+05:00","Action":"output","Package":"diploma/modules/notification/handler","Output":"\tdiploma/modules/notification/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.393079+05:00","Action":"output","Package":"diploma/modules/notification","Output":"\tdiploma/modules/notification\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.400191+05:00","Action":"pass","Package":"diploma/modules/cart/redis","Elapsed":0.572}
+{"Time":"2026-04-14T18:04:26.400258+05:00","Action":"start","Package":"diploma/modules/notification/service"}
+{"Time":"2026-04-14T18:04:26.400437+05:00","Action":"pass","Package":"diploma/modules/contract/handler","Elapsed":0.445}
+{"Time":"2026-04-14T18:04:26.400524+05:00","Action":"start","Package":"diploma/modules/order"}
+{"Time":"2026-04-14T18:04:26.51238+05:00","Action":"pass","Package":"diploma/modules/contract/handler/converter","Elapsed":0.497}
+{"Time":"2026-04-14T18:04:26.512483+05:00","Action":"start","Package":"diploma/modules/order/client/product"}
+{"Time":"2026-04-14T18:04:26.520675+05:00","Action":"pass","Package":"diploma/modules/contract/service","Elapsed":0.362}
+{"Time":"2026-04-14T18:04:26.520733+05:00","Action":"start","Package":"diploma/modules/order/client/supplier"}
+{"Time":"2026-04-14T18:04:26.56806+05:00","Action":"pass","Package":"diploma/modules/contract/repo","Elapsed":0.515}
+{"Time":"2026-04-14T18:04:26.568152+05:00","Action":"start","Package":"diploma/modules/order/handler"}
+{"Time":"2026-04-14T18:04:26.579233+05:00","Action":"pass","Package":"diploma/modules/notification","Elapsed":0.42}
+{"Time":"2026-04-14T18:04:26.579291+05:00","Action":"start","Package":"diploma/modules/order/handler/converter"}
+{"Time":"2026-04-14T18:04:26.598771+05:00","Action":"output","Package":"diploma/modules/notification/repository","Output":"\tdiploma/modules/notification/repository\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.623657+05:00","Action":"pass","Package":"diploma/modules/notification/handler","Elapsed":0.41}
+{"Time":"2026-04-14T18:04:26.623813+05:00","Action":"start","Package":"diploma/modules/order/handler/model"}
+{"Time":"2026-04-14T18:04:26.624144+05:00","Action":"output","Package":"diploma/modules/order/handler/model","Output":"?   \tdiploma/modules/order/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.624167+05:00","Action":"skip","Package":"diploma/modules/order/handler/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.624187+05:00","Action":"start","Package":"diploma/modules/order/model"}
+{"Time":"2026-04-14T18:04:26.624508+05:00","Action":"output","Package":"diploma/modules/order/model","Output":"?   \tdiploma/modules/order/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.624527+05:00","Action":"skip","Package":"diploma/modules/order/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.624539+05:00","Action":"start","Package":"diploma/modules/order/repo"}
+{"Time":"2026-04-14T18:04:26.650065+05:00","Action":"output","Package":"diploma/modules/order","Output":"\tdiploma/modules/order\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.658104+05:00","Action":"output","Package":"diploma/modules/notification/service","Output":"\tdiploma/modules/notification/service\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.658174+05:00","Action":"output","Package":"diploma/modules/order/client/supplier","Output":"\tdiploma/modules/order/client/supplier\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.658344+05:00","Action":"output","Package":"diploma/modules/order/client/product","Output":"\tdiploma/modules/order/client/product\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.756775+05:00","Action":"pass","Package":"diploma/modules/notification/repository","Elapsed":0.496}
+{"Time":"2026-04-14T18:04:26.756892+05:00","Action":"start","Package":"diploma/modules/order/repo/converter"}
+{"Time":"2026-04-14T18:04:26.76453+05:00","Action":"output","Package":"diploma/modules/order/handler","Output":"\tdiploma/modules/order/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.770348+05:00","Action":"output","Package":"diploma/modules/order/repo","Output":"\tdiploma/modules/order/repo\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.80124+05:00","Action":"pass","Package":"diploma/modules/order/client/product","Elapsed":0.289}
+{"Time":"2026-04-14T18:04:26.801372+05:00","Action":"start","Package":"diploma/modules/order/repo/model"}
+{"Time":"2026-04-14T18:04:26.801519+05:00","Action":"output","Package":"diploma/modules/order/repo/model","Output":"?   \tdiploma/modules/order/repo/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.80153+05:00","Action":"skip","Package":"diploma/modules/order/repo/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.801558+05:00","Action":"start","Package":"diploma/modules/order/service"}
+{"Time":"2026-04-14T18:04:26.825574+05:00","Action":"pass","Package":"diploma/modules/notification/service","Elapsed":0.425}
+{"Time":"2026-04-14T18:04:26.825643+05:00","Action":"start","Package":"diploma/modules/product"}
+{"Time":"2026-04-14T18:04:26.828348+05:00","Action":"output","Package":"diploma/modules/order/handler/converter","Output":"\tdiploma/modules/order/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.833558+05:00","Action":"pass","Package":"diploma/modules/order","Elapsed":0.433}
+{"Time":"2026-04-14T18:04:26.8336+05:00","Action":"start","Package":"diploma/modules/product/handler"}
+{"Time":"2026-04-14T18:04:26.881309+05:00","Action":"output","Package":"diploma/modules/order/repo/converter","Output":"\tdiploma/modules/order/repo/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.88161+05:00","Action":"pass","Package":"diploma/modules/order/repo","Elapsed":0.257}
+{"Time":"2026-04-14T18:04:26.88168+05:00","Action":"start","Package":"diploma/modules/product/handler/converter"}
+{"Time":"2026-04-14T18:04:26.882757+05:00","Action":"pass","Package":"diploma/modules/order/handler","Elapsed":0.315}
+{"Time":"2026-04-14T18:04:26.882866+05:00","Action":"start","Package":"diploma/modules/product/handler/model"}
+{"Time":"2026-04-14T18:04:26.883989+05:00","Action":"pass","Package":"diploma/modules/order/client/supplier","Elapsed":0.363}
+{"Time":"2026-04-14T18:04:26.88402+05:00","Action":"output","Package":"diploma/modules/product/handler/model","Output":"?   \tdiploma/modules/product/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.884117+05:00","Action":"skip","Package":"diploma/modules/product/handler/model","Elapsed":0.001}
+{"Time":"2026-04-14T18:04:26.884064+05:00","Action":"start","Package":"diploma/modules/product/model"}
+{"Time":"2026-04-14T18:04:26.884255+05:00","Action":"start","Package":"diploma/modules/product/repository/product"}
+{"Time":"2026-04-14T18:04:26.884735+05:00","Action":"output","Package":"diploma/modules/product/model","Output":"?   \tdiploma/modules/product/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.884748+05:00","Action":"skip","Package":"diploma/modules/product/model","Elapsed":0.001}
+{"Time":"2026-04-14T18:04:26.884759+05:00","Action":"start","Package":"diploma/modules/product/repository/product/converter"}
+{"Time":"2026-04-14T18:04:26.985725+05:00","Action":"output","Package":"diploma/modules/product/repository/product","Output":"\tdiploma/modules/product/repository/product\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.988224+05:00","Action":"pass","Package":"diploma/modules/order/handler/converter","Elapsed":0.409}
+{"Time":"2026-04-14T18:04:26.98836+05:00","Action":"start","Package":"diploma/modules/product/repository/product/model"}
+{"Time":"2026-04-14T18:04:26.988538+05:00","Action":"output","Package":"diploma/modules/product/repository/product/model","Output":"?   \tdiploma/modules/product/repository/product/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.988555+05:00","Action":"skip","Package":"diploma/modules/product/repository/product/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988561+05:00","Action":"start","Package":"diploma/modules/product/service"}
+{"Time":"2026-04-14T18:04:26.988571+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestProductService"}
+{"Time":"2026-04-14T18:04:26.988574+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService","Output":"=== RUN   TestProductService\n"}
+{"Time":"2026-04-14T18:04:26.988583+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestProductService/TestCreateProduct_UsesTransaction"}
+{"Time":"2026-04-14T18:04:26.988587+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestCreateProduct_UsesTransaction","Output":"=== RUN   TestProductService/TestCreateProduct_UsesTransaction\n"}
+{"Time":"2026-04-14T18:04:26.988715+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestCreateProduct_UsesTransaction","Output":"--- PASS: TestProductService/TestCreateProduct_UsesTransaction (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.988721+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestProductService/TestCreateProduct_UsesTransaction","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988726+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestProductService/TestFavoriteProducts_EmptyList"}
+{"Time":"2026-04-14T18:04:26.988729+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestFavoriteProducts_EmptyList","Output":"=== RUN   TestProductService/TestFavoriteProducts_EmptyList\n"}
+{"Time":"2026-04-14T18:04:26.988739+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestFavoriteProducts_EmptyList","Output":"--- PASS: TestProductService/TestFavoriteProducts_EmptyList (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.988743+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestProductService/TestFavoriteProducts_EmptyList","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988746+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success"}
+{"Time":"2026-04-14T18:04:26.988749+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success","Output":"=== RUN   TestProductService/TestProductList_Success\n"}
+{"Time":"2026-04-14T18:04:26.988757+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success","Output":"2026-04-14T18:02:25.122+0500\t\u001b[34mINFO\u001b[0m\tservice/product-list.go:12\tFetching product list\t{\"service\": \"product\", \"offset\": 0, \"limit\": 10}\n"}
+{"Time":"2026-04-14T18:04:26.988761+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success","Output":"2026-04-14T18:02:25.123+0500\t\u001b[34mINFO\u001b[0m\tservice/product-list.go:34\tSuccessfully fetched product list\t{\"service\": \"product\", \"total_products\": 1, \"returned_products\": 1}\n"}
+{"Time":"2026-04-14T18:04:26.988775+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success","Output":"--- PASS: TestProductService/TestProductList_Success (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.988778+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestProductService/TestProductList_Success","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988781+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit"}
+{"Time":"2026-04-14T18:04:26.988789+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit","Output":"=== RUN   TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit\n"}
+{"Time":"2026-04-14T18:04:26.988842+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit","Output":"--- PASS: TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.988882+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestProductService/TestSuggestions_TrimsQueryAndDefaultsLimit","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988896+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestProductService","Output":"--- PASS: TestProductService (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.988905+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestProductService","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.988915+05:00","Action":"run","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty"}
+{"Time":"2026-04-14T18:04:26.988924+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty","Output":"=== RUN   TestSuggestions_EmptyQueryReturnsEmpty\n"}
+{"Time":"2026-04-14T18:04:26.988932+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty","Output":"=== PAUSE TestSuggestions_EmptyQueryReturnsEmpty\n"}
+{"Time":"2026-04-14T18:04:26.98894+05:00","Action":"pause","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty"}
+{"Time":"2026-04-14T18:04:26.988947+05:00","Action":"cont","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty"}
+{"Time":"2026-04-14T18:04:26.988953+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty","Output":"=== CONT  TestSuggestions_EmptyQueryReturnsEmpty\n"}
+{"Time":"2026-04-14T18:04:26.98896+05:00","Action":"output","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty","Output":"--- PASS: TestSuggestions_EmptyQueryReturnsEmpty (0.00s)\n"}
+{"Time":"2026-04-14T18:04:26.989038+05:00","Action":"pass","Package":"diploma/modules/product/service","Test":"TestSuggestions_EmptyQueryReturnsEmpty","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.989045+05:00","Action":"output","Package":"diploma/modules/product/service","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:26.989052+05:00","Action":"output","Package":"diploma/modules/product/service","Output":"coverage: 38.7% of statements\n"}
+{"Time":"2026-04-14T18:04:26.989059+05:00","Action":"output","Package":"diploma/modules/product/service","Output":"ok  \tdiploma/modules/product/service\t(cached)\tcoverage: 38.7% of statements\n"}
+{"Time":"2026-04-14T18:04:26.98907+05:00","Action":"pass","Package":"diploma/modules/product/service","Elapsed":0.001}
+{"Time":"2026-04-14T18:04:26.989819+05:00","Action":"start","Package":"diploma/modules/supplier"}
+{"Time":"2026-04-14T18:04:26.989829+05:00","Action":"pass","Package":"diploma/modules/order/repo/converter","Elapsed":0.233}
+{"Time":"2026-04-14T18:04:26.989861+05:00","Action":"start","Package":"diploma/modules/supplier/handler"}
+{"Time":"2026-04-14T18:04:26.990192+05:00","Action":"output","Package":"diploma/modules/supplier","Output":"?   \tdiploma/modules/supplier\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.990239+05:00","Action":"skip","Package":"diploma/modules/supplier","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.99029+05:00","Action":"start","Package":"diploma/modules/supplier/model"}
+{"Time":"2026-04-14T18:04:26.99065+05:00","Action":"output","Package":"diploma/modules/supplier/model","Output":"?   \tdiploma/modules/supplier/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:26.990731+05:00","Action":"skip","Package":"diploma/modules/supplier/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:26.990812+05:00","Action":"start","Package":"diploma/modules/supplier/repo"}
+{"Time":"2026-04-14T18:04:26.992444+05:00","Action":"output","Package":"diploma/modules/product/repository/product/converter","Output":"\tdiploma/modules/product/repository/product/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:26.99895+05:00","Action":"output","Package":"diploma/modules/product/handler/converter","Output":"\tdiploma/modules/product/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.071067+05:00","Action":"output","Package":"diploma/modules/product","Output":"\tdiploma/modules/product\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.10475+05:00","Action":"output","Package":"diploma/modules/product/handler","Output":"\tdiploma/modules/product/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.121848+05:00","Action":"output","Package":"diploma/modules/supplier/handler","Output":"\tdiploma/modules/supplier/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.135727+05:00","Action":"pass","Package":"diploma/modules/product/repository/product","Elapsed":0.251}
+{"Time":"2026-04-14T18:04:27.135836+05:00","Action":"start","Package":"diploma/modules/supplier/repo/converter"}
+{"Time":"2026-04-14T18:04:27.146709+05:00","Action":"output","Package":"diploma/modules/supplier/repo","Output":"\tdiploma/modules/supplier/repo\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.241159+05:00","Action":"pass","Package":"diploma/modules/product/handler/converter","Elapsed":0.36}
+{"Time":"2026-04-14T18:04:27.241268+05:00","Action":"start","Package":"diploma/modules/supplier/repo/model"}
+{"Time":"2026-04-14T18:04:27.241678+05:00","Action":"output","Package":"diploma/modules/supplier/repo/model","Output":"?   \tdiploma/modules/supplier/repo/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:27.241708+05:00","Action":"skip","Package":"diploma/modules/supplier/repo/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.241752+05:00","Action":"start","Package":"diploma/modules/supplier/service"}
+{"Time":"2026-04-14T18:04:27.246252+05:00","Action":"pass","Package":"diploma/modules/product/repository/product/converter","Elapsed":0.361}
+{"Time":"2026-04-14T18:04:27.246296+05:00","Action":"start","Package":"diploma/modules/user"}
+{"Time":"2026-04-14T18:04:27.25942+05:00","Action":"run","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder"}
+{"Time":"2026-04-14T18:04:27.259457+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"=== RUN   TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261613+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"=== PAUSE TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261619+05:00","Action":"pause","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder"}
+{"Time":"2026-04-14T18:04:27.261623+05:00","Action":"run","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier"}
+{"Time":"2026-04-14T18:04:27.261627+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"=== RUN   TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier\n"}
+{"Time":"2026-04-14T18:04:27.261635+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"=== PAUSE TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier\n"}
+{"Time":"2026-04-14T18:04:27.261638+05:00","Action":"pause","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier"}
+{"Time":"2026-04-14T18:04:27.261645+05:00","Action":"run","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder"}
+{"Time":"2026-04-14T18:04:27.26165+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"=== RUN   TestCancelOrderByCustomer_RejectsNonPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261668+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"=== PAUSE TestCancelOrderByCustomer_RejectsNonPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261672+05:00","Action":"pause","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder"}
+{"Time":"2026-04-14T18:04:27.261677+05:00","Action":"cont","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder"}
+{"Time":"2026-04-14T18:04:27.26168+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"=== CONT  TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261688+05:00","Action":"cont","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder"}
+{"Time":"2026-04-14T18:04:27.261691+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"=== CONT  TestCancelOrderByCustomer_RejectsNonPendingOrder\n"}
+{"Time":"2026-04-14T18:04:27.261694+05:00","Action":"cont","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier"}
+{"Time":"2026-04-14T18:04:27.261697+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"=== CONT  TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier\n"}
+{"Time":"2026-04-14T18:04:27.2617+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"2026-04-14T18:04:27.259+0500\t\u001b[34mINFO\u001b[0m\tservice/order.go:169\tUpdating order status\t{\"service\": \"order\", \"supplier_id\": 22, \"order_id\": 50, \"new_status\": 2}\n"}
+{"Time":"2026-04-14T18:04:27.261716+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"2026-04-14T18:04:27.259+0500\t\u001b[34mINFO\u001b[0m\tservice/order.go:220\tCreating contract for order\t{\"service\": \"order\", \"order_id\": 50}\n"}
+{"Time":"2026-04-14T18:04:27.26172+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"2026-04-14T18:04:27.259+0500\t\u001b[34mINFO\u001b[0m\tservice/order.go:252\tSuccessfully updated order status\t{\"service\": \"order\", \"order_id\": 50, \"old_status\": 1, \"new_status\": 2}\n"}
+{"Time":"2026-04-14T18:04:27.261727+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"--- PASS: TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder (0.00s)\n"}
+{"Time":"2026-04-14T18:04:27.261731+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"2026-04-14T18:04:27.259+0500\t\u001b[34mINFO\u001b[0m\tservice/order.go:340\tCancelling order\t{\"service\": \"order\", \"customer_id\": 10, \"order_id\": 60}\n"}
+{"Time":"2026-04-14T18:04:27.261734+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Output":"2026-04-14T18:04:27.259+0500\t\u001b[33mWARN\u001b[0m\tservice/order.go:362\tInvalid order status for cancellation\t{\"service\": \"order\", \"current_status\": 2}\n"}
+{"Time":"2026-04-14T18:04:27.261743+05:00","Action":"pass","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_CreatesContractForPendingOrder","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.261747+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"--- PASS: TestCancelOrderByCustomer_RejectsNonPendingOrder (0.00s)\n"}
+{"Time":"2026-04-14T18:04:27.26175+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"2026-04-14T18:04:27.259+0500\t\u001b[34mINFO\u001b[0m\tservice/order.go:169\tUpdating order status\t{\"service\": \"order\", \"supplier_id\": 22, \"order_id\": 50, \"new_status\": 2}\n"}
+{"Time":"2026-04-14T18:04:27.261753+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Output":"2026-04-14T18:04:27.259+0500\t\u001b[33mWARN\u001b[0m\tservice/order.go:185\tUnauthorized status update attempt\t{\"service\": \"order\", \"supplier_id\": 22, \"order_id\": 50, \"actual_supplier_id\": 99}\n"}
+{"Time":"2026-04-14T18:04:27.261757+05:00","Action":"pass","Package":"diploma/modules/order/service","Test":"TestCancelOrderByCustomer_RejectsNonPendingOrder","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.261759+05:00","Action":"output","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Output":"--- PASS: TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier (0.00s)\n"}
+{"Time":"2026-04-14T18:04:27.261762+05:00","Action":"pass","Package":"diploma/modules/order/service","Test":"TestUpdateOrderStatusBySupplier_RejectsUnauthorizedSupplier","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.261764+05:00","Action":"output","Package":"diploma/modules/order/service","Output":"PASS\n"}
+{"Time":"2026-04-14T18:04:27.26301+05:00","Action":"output","Package":"diploma/modules/order/service","Output":"coverage: 20.1% of statements\n"}
+{"Time":"2026-04-14T18:04:27.265224+05:00","Action":"output","Package":"diploma/modules/order/service","Output":"ok  \tdiploma/modules/order/service\t0.463s\tcoverage: 20.1% of statements\n"}
+{"Time":"2026-04-14T18:04:27.273927+05:00","Action":"pass","Package":"diploma/modules/order/service","Elapsed":0.472}
+{"Time":"2026-04-14T18:04:27.276075+05:00","Action":"start","Package":"diploma/modules/user/handler"}
+{"Time":"2026-04-14T18:04:27.284436+05:00","Action":"output","Package":"diploma/modules/supplier/repo/converter","Output":"\tdiploma/modules/supplier/repo/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.287348+05:00","Action":"pass","Package":"diploma/modules/supplier/handler","Elapsed":0.297}
+{"Time":"2026-04-14T18:04:27.287485+05:00","Action":"start","Package":"diploma/modules/user/handler/converter"}
+{"Time":"2026-04-14T18:04:27.287621+05:00","Action":"pass","Package":"diploma/modules/product/handler","Elapsed":0.454}
+{"Time":"2026-04-14T18:04:27.287709+05:00","Action":"start","Package":"diploma/modules/user/handler/model"}
+{"Time":"2026-04-14T18:04:27.28788+05:00","Action":"output","Package":"diploma/modules/user/handler/model","Output":"?   \tdiploma/modules/user/handler/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:27.28789+05:00","Action":"skip","Package":"diploma/modules/user/handler/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.287895+05:00","Action":"start","Package":"diploma/modules/user/model"}
+{"Time":"2026-04-14T18:04:27.287991+05:00","Action":"output","Package":"diploma/modules/user/model","Output":"?   \tdiploma/modules/user/model\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:27.288+05:00","Action":"skip","Package":"diploma/modules/user/model","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.288005+05:00","Action":"start","Package":"diploma/modules/user/repository"}
+{"Time":"2026-04-14T18:04:27.332172+05:00","Action":"pass","Package":"diploma/modules/supplier/repo","Elapsed":0.341}
+{"Time":"2026-04-14T18:04:27.33229+05:00","Action":"start","Package":"diploma/modules/user/service"}
+{"Time":"2026-04-14T18:04:27.360974+05:00","Action":"pass","Package":"diploma/modules/product","Elapsed":0.535}
+{"Time":"2026-04-14T18:04:27.361043+05:00","Action":"start","Package":"diploma/pkg/client/db"}
+{"Time":"2026-04-14T18:04:27.361277+05:00","Action":"output","Package":"diploma/pkg/client/db","Output":"?   \tdiploma/pkg/client/db\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:27.361287+05:00","Action":"skip","Package":"diploma/pkg/client/db","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.361292+05:00","Action":"start","Package":"diploma/pkg/client/db/pg"}
+{"Time":"2026-04-14T18:04:27.456727+05:00","Action":"output","Package":"diploma/modules/user/handler","Output":"\tdiploma/modules/user/handler\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.462506+05:00","Action":"output","Package":"diploma/modules/supplier/service","Output":"\tdiploma/modules/supplier/service\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.491167+05:00","Action":"output","Package":"diploma/modules/user/handler/converter","Output":"\tdiploma/modules/user/handler/converter\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.4914+05:00","Action":"pass","Package":"diploma/modules/supplier/repo/converter","Elapsed":0.356}
+{"Time":"2026-04-14T18:04:27.491465+05:00","Action":"start","Package":"diploma/pkg/client/db/prettier"}
+{"Time":"2026-04-14T18:04:27.49453+05:00","Action":"output","Package":"diploma/modules/user/service","Output":"\tdiploma/modules/user/service\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.515139+05:00","Action":"output","Package":"diploma/modules/user","Output":"\tdiploma/modules/user\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.536247+05:00","Action":"output","Package":"diploma/modules/user/repository","Output":"\tdiploma/modules/user/repository\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.539601+05:00","Action":"output","Package":"diploma/pkg/client/db/pg","Output":"\tdiploma/pkg/client/db/pg\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.742422+05:00","Action":"output","Package":"diploma/pkg/client/db/prettier","Output":"\tdiploma/pkg/client/db/prettier\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.743317+05:00","Action":"pass","Package":"diploma/modules/user/service","Elapsed":0.411}
+{"Time":"2026-04-14T18:04:27.743848+05:00","Action":"start","Package":"diploma/pkg/client/db/transaction"}
+{"Time":"2026-04-14T18:04:27.747397+05:00","Action":"pass","Package":"diploma/modules/user","Elapsed":0.501}
+{"Time":"2026-04-14T18:04:27.747472+05:00","Action":"start","Package":"diploma/pkg/closer"}
+{"Time":"2026-04-14T18:04:27.747619+05:00","Action":"pass","Package":"diploma/modules/user/handler/converter","Elapsed":0.46}
+{"Time":"2026-04-14T18:04:27.747654+05:00","Action":"start","Package":"diploma/pkg/context-keys"}
+{"Time":"2026-04-14T18:04:27.747846+05:00","Action":"output","Package":"diploma/pkg/context-keys","Output":"?   \tdiploma/pkg/context-keys\t[no test files]\n"}
+{"Time":"2026-04-14T18:04:27.747858+05:00","Action":"skip","Package":"diploma/pkg/context-keys","Elapsed":0}
+{"Time":"2026-04-14T18:04:27.747914+05:00","Action":"start","Package":"diploma/pkg/logger"}
+{"Time":"2026-04-14T18:04:27.749025+05:00","Action":"pass","Package":"diploma/modules/supplier/service","Elapsed":0.507}
+{"Time":"2026-04-14T18:04:27.749129+05:00","Action":"start","Package":"diploma/pkg/metrics"}
+{"Time":"2026-04-14T18:04:27.749126+05:00","Action":"pass","Package":"diploma/pkg/client/db/pg","Elapsed":0.388}
+{"Time":"2026-04-14T18:04:27.749222+05:00","Action":"start","Package":"diploma/pkg/password-util"}
+{"Time":"2026-04-14T18:04:27.862662+05:00","Action":"pass","Package":"diploma/modules/user/repository","Elapsed":0.575}
+{"Time":"2026-04-14T18:04:27.862742+05:00","Action":"start","Package":"diploma/pkg/service"}
+{"Time":"2026-04-14T18:04:27.873972+05:00","Action":"pass","Package":"diploma/modules/user/handler","Elapsed":0.598}
+{"Time":"2026-04-14T18:04:27.874087+05:00","Action":"start","Package":"diploma/pkg/validator"}
+{"Time":"2026-04-14T18:04:27.98381+05:00","Action":"output","Package":"diploma/pkg/password-util","Output":"\tdiploma/pkg/password-util\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.984482+05:00","Action":"output","Package":"diploma/pkg/logger","Output":"\tdiploma/pkg/logger\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:27.98736+05:00","Action":"pass","Package":"diploma/pkg/client/db/prettier","Elapsed":0.496}
+{"Time":"2026-04-14T18:04:28.042612+05:00","Action":"output","Package":"diploma/pkg/closer","Output":"\tdiploma/pkg/closer\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:28.07265+05:00","Action":"output","Package":"diploma/pkg/metrics","Output":"\tdiploma/pkg/metrics\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:28.074478+05:00","Action":"output","Package":"diploma/pkg/service","Output":"\tdiploma/pkg/service\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:28.07809+05:00","Action":"output","Package":"diploma/pkg/validator","Output":"\tdiploma/pkg/validator\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:28.078913+05:00","Action":"output","Package":"diploma/pkg/client/db/transaction","Output":"\tdiploma/pkg/client/db/transaction\t\tcoverage: 0.0% of statements\n"}
+{"Time":"2026-04-14T18:04:28.204567+05:00","Action":"pass","Package":"diploma/pkg/logger","Elapsed":0.457}
+{"Time":"2026-04-14T18:04:28.204699+05:00","Action":"pass","Package":"diploma/pkg/password-util","Elapsed":0.455}
+{"Time":"2026-04-14T18:04:28.210056+05:00","Action":"pass","Package":"diploma/pkg/closer","Elapsed":0.463}
+{"Time":"2026-04-14T18:04:28.218652+05:00","Action":"pass","Package":"diploma/pkg/service","Elapsed":0.356}
+{"Time":"2026-04-14T18:04:28.218708+05:00","Action":"pass","Package":"diploma/pkg/validator","Elapsed":0.345}
+{"Time":"2026-04-14T18:04:28.220485+05:00","Action":"pass","Package":"diploma/pkg/metrics","Elapsed":0.471}
+{"Time":"2026-04-14T18:04:28.220847+05:00","Action":"pass","Package":"diploma/pkg/client/db/transaction","Elapsed":0.477}

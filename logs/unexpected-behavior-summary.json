@@ -1,0 +1,86 @@
+[
+  {
+    "category": "Runtime constraint",
+    "module": "Cross-module",
+    "description": "api/backend.smoke.spec.ts > backend smoke endpoint responds successfully @smoke failed because the required backend service was unavailable (ECONNREFUSED).",
+    "source": "unmapped"
+  },
+  {
+    "category": "Runtime constraint",
+    "module": "Authentication and authorization",
+    "description": "api/auth/auth.live.spec.ts > Live API authentication > invalid login returns 401 @api @critical @auth failed because the required backend service was unavailable (ECONNREFUSED).",
+    "source": "unmapped"
+  },
+  {
+    "category": "Runtime constraint",
+    "module": "Cart management",
+    "description": "api/cart/cart.live.spec.ts > Live API cart > unauthorized cart access is rejected @api @critical @cart failed because the required backend service was unavailable (ECONNREFUSED).",
+    "source": "unmapped"
+  },
+  {
+    "category": "Runtime constraint",
+    "module": "Product catalog and listing",
+    "description": "api/catalog/catalog.live.spec.ts > Live API catalog > product list endpoint returns catalog payload @api @critical @catalog failed because the required backend service was unavailable (ECONNREFUSED).",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/authorization.critical.spec.ts > Authorization > unauthorized user is redirected from protected cart route @critical @smoke @auth took 7.47s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/login.critical.spec.ts > Authentication > valid user can log in and reach the storefront @critical @smoke @auth took 7.78s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Cart management",
+    "description": "e2e/cart/cart.critical.spec.ts > Cart > authenticated user can add a product to cart from product details @critical @smoke @cart took 11.04s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Product catalog and listing",
+    "description": "e2e/catalog/catalog.critical.spec.ts > Catalog > catalog renders products and applies search filters @critical @smoke @catalog took 7.09s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/authorization.critical.spec.ts > Authorization > unauthorized user is redirected from protected cart route @critical @smoke @auth took 7.09s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/authorization.critical.spec.ts > Authorization > customer is redirected away from admin route @critical @regression @auth took 7.17s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/login.critical.spec.ts > Authentication > valid user can log in and reach the storefront @critical @smoke @auth took 7.44s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Performance anomaly",
+    "module": "Authentication and authorization",
+    "description": "e2e/auth/login.critical.spec.ts > Authentication > invalid credentials are rejected with an error message @critical @regression @auth took 6.25s, exceeding the 5s anomaly threshold.",
+    "source": "unmapped"
+  },
+  {
+    "category": "Coverage anomaly",
+    "module": "Order lifecycle",
+    "description": "Order lifecycle backend coverage is only 9.02%, leaving critical logic weakly instrumented.",
+    "source": "coverage-summary"
+  },
+  {
+    "category": "Coverage anomaly",
+    "module": "Product catalog and listing",
+    "description": "Product catalog and listing backend coverage is only 5.58%, leaving critical logic weakly instrumented.",
+    "source": "coverage-summary"
+  }
+]

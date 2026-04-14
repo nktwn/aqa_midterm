@@ -1,0 +1,882 @@
+{
+  "config": {
+    "configFile": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/playwright.config.ts",
+    "rootDir": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npm --prefix frontend run dev -- --hostname 127.0.0.1",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "api/auth/auth.live.spec.ts",
+      "file": "api/auth/auth.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API authentication",
+          "file": "api/auth/auth.live.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "invalid login returns 401 @api @critical @auth",
+              "ok": false,
+              "tags": [
+                "api",
+                "critical",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 48,
+                      "error": {
+                        "message": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n",
+                        "stack": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts:13:36",
+                        "location": {
+                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
+                          "column": 36,
+                          "line": 13
+                        },
+                        "snippet": "  11 |\n  12 |   test(\"invalid login returns 401 @api @critical @auth\", async ({ request }) => {\n> 13 |     const response = await request.post(`${qaApiBaseUrl}/auth/login`, {\n     |                                    ^\n  14 |       data: {\n  15 |         phone_number: \"+70000000000\",\n  16 |         password: \"wrong-password\","
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
+                            "column": 36,
+                            "line": 13
+                          },
+                          "message": "Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:8080/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n\n  11 |\n  12 |   test(\"invalid login returns 401 @api @critical @auth\", async ({ request }) => {\n> 13 |     const response = await request.post(`${qaApiBaseUrl}/auth/login`, {\n     |                                    ^\n  14 |       data: {\n  15 |         phone_number: \"+70000000000\",\n  16 |         password: \"wrong-password\",\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts:13:36"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:37.345Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-auth-auth.live-Live-AP-2f041-turns-401-api-critical-auth-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/auth/auth.live.spec.ts",
+                        "column": 36,
+                        "line": 13
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f2e19db1574dd82efefb-0acd0e8e58aa0357e9cf",
+              "file": "api/auth/auth.live.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/cart/cart.live.spec.ts",
+      "file": "api/cart/cart.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API cart",
+          "file": "api/cart/cart.live.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "unauthorized cart access is rejected @api @critical @cart",
+              "ok": false,
+              "tags": [
+                "api",
+                "critical",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 23,
+                      "error": {
+                        "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                        "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts:8:36",
+                        "location": {
+                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
+                          "column": 36,
+                          "line": 8
+                        },
+                        "snippet": "   6 |\n   7 |   test(\"unauthorized cart access is rejected @api @critical @cart\", async ({ request }) => {\n>  8 |     const response = await request.get(`${qaApiBaseUrl}/cart/`);\n     |                                    ^\n   9 |\n  10 |     expect(response.status()).toBe(401);\n  11 |   });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
+                            "column": 36,
+                            "line": 8
+                          },
+                          "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/cart/\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   6 |\n   7 |   test(\"unauthorized cart access is rejected @api @critical @cart\", async ({ request }) => {\n>  8 |     const response = await request.get(`${qaApiBaseUrl}/cart/`);\n     |                                    ^\n   9 |\n  10 |     expect(response.status()).toBe(401);\n  11 |   });\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts:8:36"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:37.535Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-cart-cart.live-Live-AP-08bf2--rejected-api-critical-cart-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/cart/cart.live.spec.ts",
+                        "column": 36,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b9a4ce32db611ece1278-0ab38388840feebaf260",
+              "file": "api/cart/cart.live.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/catalog/catalog.live.spec.ts",
+      "file": "api/catalog/catalog.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API catalog",
+          "file": "api/catalog/catalog.live.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "product list endpoint returns catalog payload @api @critical @catalog",
+              "ok": false,
+              "tags": [
+                "api",
+                "critical",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 32,
+                      "error": {
+                        "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n",
+                        "stack": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts:10:36",
+                        "location": {
+                          "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
+                          "column": 36,
+                          "line": 10
+                        },
+                        "snippet": "   8 |     request,\n   9 |   }) => {\n> 10 |     const response = await request.get(`${qaApiBaseUrl}/product/list?limit=5&offset=0`);\n     |                                    ^\n  11 |\n  12 |     expect(response.ok()).toBeTruthy();\n  13 |     const body = await response.json();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
+                            "column": 36,
+                            "line": 10
+                          },
+                          "message": "Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8080\nCall log:\n\u001b[2m  - → GET http://127.0.0.1:8080/api/product/list?limit=5&offset=0\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\n\n   8 |     request,\n   9 |   }) => {\n> 10 |     const response = await request.get(`${qaApiBaseUrl}/product/list?limit=5&offset=0`);\n     |                                    ^\n  11 |\n  12 |     expect(response.ok()).toBeTruthy();\n  13 |     const body = await response.json();\n    at /Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts:10:36"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:37.317Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/test-results/api-catalog-catalog.live-L-7c780-ayload-api-critical-catalog-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_midterm/tests/api/catalog/catalog.live.spec.ts",
+                        "column": 36,
+                        "line": 10
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a554a5a849ab16a884c5-162a8173a99fc949a51e",
+              "file": "api/catalog/catalog.live.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/auth/authorization.critical.spec.ts",
+      "file": "e2e/auth/authorization.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authorization",
+          "file": "e2e/auth/authorization.critical.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "unauthorized user is redirected from protected cart route @critical @smoke @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7093,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:37.360Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a287ec7a2defdf40464f-57dc7aff695dc2b6cf66",
+              "file": "e2e/auth/authorization.critical.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "customer is redirected away from admin route @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7167,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:38.104Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a287ec7a2defdf40464f-23226047ab29dcd93e85",
+              "file": "e2e/auth/authorization.critical.spec.ts",
+              "line": 17,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/auth/login.critical.spec.ts",
+      "file": "e2e/auth/login.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication",
+          "file": "e2e/auth/login.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "valid user can log in and reach the storefront @critical @smoke @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7439,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:38.016Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5e3329a8ba52e621f317-d7510b7690d8a023d98d",
+              "file": "e2e/auth/login.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "invalid credentials are rejected with an error message @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6247,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:38.184Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5e3329a8ba52e621f317-0ae4e82ce96b0d3ff074",
+              "file": "e2e/auth/login.critical.spec.ts",
+              "line": 22,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/cart/cart.critical.spec.ts",
+      "file": "e2e/cart/cart.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart",
+          "file": "e2e/cart/cart.critical.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "authenticated user can add a product to cart from product details @critical @smoke @cart",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4365,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:46.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bcd48a5c00a5a936952c-7d2b9046fffefc0103eb",
+              "file": "e2e/cart/cart.critical.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "user can update quantity and clear cart @critical @regression @cart",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:46.868Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bcd48a5c00a5a936952c-b924369d9ad9d9e2d373",
+              "file": "e2e/cart/cart.critical.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/catalog/catalog.critical.spec.ts",
+      "file": "e2e/catalog/catalog.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Catalog",
+          "file": "e2e/catalog/catalog.critical.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "catalog renders products and applies search filters @critical @smoke @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:47.365Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69b44a4ac87d1e01ca6d-7e2612816a5423765fce",
+              "file": "e2e/catalog/catalog.critical.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "user can open product details from the catalog @critical @regression @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3632,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:47.370Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69b44a4ac87d1e01ca6d-a095847c156ab45faf60",
+              "file": "e2e/catalog/catalog.critical.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/checkout/checkout.critical.spec.ts",
+      "file": "e2e/checkout/checkout.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkout",
+          "file": "e2e/checkout/checkout.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "checkout requires a delivery address before payment link creation @critical @regression @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1563,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:50.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "153b5cedca35198fb425-0559437a4d4303001cc2",
+              "file": "e2e/checkout/checkout.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "user can save address and create payment link for valid cart @critical @smoke @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1748,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:50.910Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "153b5cedca35198fb425-b9f24be23a4a14423378",
+              "file": "e2e/checkout/checkout.critical.spec.ts",
+              "line": 23,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/orders/orders.critical.spec.ts",
+      "file": "e2e/orders/orders.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Orders",
+          "file": "e2e/orders/orders.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "orders page shows created order details and supports cancellation @critical @smoke @orders",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "orders"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1585,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:51.014Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cece3e00c8a1b963ac6a-c4196010aa6024f5f597",
+              "file": "e2e/orders/orders.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "unauthorized user is redirected from orders page @critical @regression @orders",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "orders"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1640,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T12:53:51.044Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cece3e00c8a1b963ac6a-c928b55d0e4bf40cd52f",
+              "file": "e2e/orders/orders.critical.spec.ts",
+              "line": 26,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-14T12:53:24.328Z",
+    "duration": 28401.986,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
