@@ -114,6 +114,30 @@ jobs:
           docker compose -f backend/docker-compose.yaml ps >&2 || true
           exit 1
 
+      - name: Wait for seeded auth readiness
+        run: |
+          set -a
+          . ./.env.qa
+          set +a
+
+          for attempt in $(seq 1 24); do
+            response="$(curl -sS -X POST "${QA_API_BASE_URL}/auth/login" \
+              -H 'Content-Type: application/json' \
+              -d "{\"phone_number\":\"${QA_API_LOGIN_PHONE}\",\"password\":\"${QA_API_LOGIN_PASSWORD}\"}")"
+
+            if printf '%s' "$response" | grep -q '"access_token"'; then
+              exit 0
+            fi
+
+            sleep 5
+          done
+
+          echo "Seeded auth user did not become ready in time" >&2
+          echo "Last login response: $response" >&2
+          docker compose -f backend/docker-compose.yaml ps >&2 || true
+          docker compose -f backend/docker-compose.yaml logs --no-color data-seeder app >&2 || true
+          exit 1
+
       - name: Run live API suite with JSON report
         env:
           QA_RUN_API_SMOKE: "true"
