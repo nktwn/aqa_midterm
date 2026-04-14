@@ -116,9 +116,9 @@ jobs:
 
       - name: Wait for seeded auth readiness
         run: |
-          set -a
-          . ./.env.qa
-          set +a
+          QA_API_BASE_URL="$(grep '^QA_API_BASE_URL=' .env.qa | head -n 1 | cut -d= -f2-)"
+          QA_API_LOGIN_PHONE="$(grep '^QA_API_LOGIN_PHONE=' .env.qa | head -n 1 | cut -d= -f2-)"
+          QA_API_LOGIN_PASSWORD="$(grep '^QA_API_LOGIN_PASSWORD=' .env.qa | head -n 1 | cut -d= -f2-)"
 
           for attempt in $(seq 1 24); do
             response="$(curl -sS -X POST "${QA_API_BASE_URL}/auth/login" \
